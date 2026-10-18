@@ -29,6 +29,39 @@ document.querySelectorAll(".flip").forEach(function (card) {
   });
 });
 
+// 타임라인 팝업: 도트(또는 그 줄)를 클릭하면 사진과 설명이 열립니다.
+(function () {
+  var dialog = document.getElementById("jdialog");
+  if (!dialog || typeof dialog.showModal !== "function") return;
+  var photo = document.getElementById("jd-photo");
+  var img = document.getElementById("jd-img");
+  var body = document.getElementById("jd-body");
+  var opener = null;
+
+  // 사진 파일이 없으면 색 배경으로 대신 보여줍니다.
+  img.addEventListener("error", function () { photo.classList.add("noimg"); });
+  img.addEventListener("load", function () { photo.classList.remove("noimg"); });
+
+  document.querySelectorAll(".jitem").forEach(function (item) {
+    item.querySelector(".jbtn").addEventListener("click", function (e) {
+      opener = e.currentTarget;
+      body.innerHTML = item.querySelector(".jdetail").innerHTML;
+      var title = body.querySelector(".d-title");
+      dialog.setAttribute("aria-label", title ? title.textContent : "");
+      img.style.objectPosition = item.getAttribute("data-pos") || "50% 50%";
+      photo.classList.remove("noimg");
+      img.src = item.getAttribute("data-img");
+      dialog.showModal();
+      dialog.scrollTop = 0;
+    });
+  });
+
+  document.getElementById("jclose").addEventListener("click", function () { dialog.close(); });
+  // 팝업 바깥(어두운 배경)을 클릭하면 닫힙니다.
+  dialog.addEventListener("click", function (e) { if (e.target === dialog) dialog.close(); });
+  dialog.addEventListener("close", function () { if (opener) opener.focus(); });
+})();
+
 // JGH 드롭다운 메뉴: 클릭하면 열리고, 바깥을 클릭하거나 Esc를 누르면 닫힙니다.
 (function () {
   var btn = document.getElementById("menu-btn");

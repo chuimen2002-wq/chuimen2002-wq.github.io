@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me | Joon Gul Hong</title>
   <meta name="description" content="Joon Gul Hong - About Me">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body class="page">
   <header class="top">
@@ -111,27 +111,107 @@
     <!-- 4. 여정 -->
     <section class="sec">
       <h2 data-ko="변화를 지나온 길" data-en="My journey">변화를 지나온 길</h2>
+      <p class="lead2" data-ko="반짝이는 점을 눌러 그 시절의 이야기를 열어보세요." data-en="Click a glowing dot to open the story behind it.">반짝이는 점을 눌러 그 시절의 이야기를 열어보세요.</p>
       <ol class="journey">
-        <li>
-          <span class="when" data-ko="어린 시절" data-en="Childhood">어린 시절</span>
-          <p data-ko="독일로 이주해 자랐습니다." data-en="Moved to Germany and grew up there.">독일로 이주해 자랐습니다.</p>
+        <li class="jitem" data-img="images/childhood.jpg" data-pos="50% 52%">
+          <button class="jbtn" type="button" aria-haspopup="dialog">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="when" data-ko="어린 시절" data-en="Childhood">어린 시절</span>
+            <span class="jtext" data-ko="독일로 이주해 자랐습니다." data-en="Moved to Germany and grew up there.">독일로 이주해 자랐습니다.</span>
+          </button>
+          <div class="jdetail" hidden>
+            <h3 class="d-title" data-ko="낯선 땅에서 배운 유연함" data-en="Flexibility, learned in an unfamiliar land">낯선 땅에서 배운 유연함</h3>
+            <p class="d-lead" data-ko="제 첫 번째 글로벌 경험은 일터가 아니라 교실이었습니다." data-en="My first global experience was not a workplace, but a classroom.">제 첫 번째 글로벌 경험은 일터가 아니라 교실이었습니다.</p>
+            <p class="d-story" data-ko="어린 나이에 낯선 해외로 이주해 유치원과 초등학교에서 독일 교육 과정을 경험했습니다. 그 시간은 유연함과 공감 능력을 길러주었고, 독일어를 자연스럽게 익혀 훗날 독일에서 커리어를 쌓을 수 있는 밑바탕이 되었습니다."
+               data-en="I moved to an unfamiliar country at a young age and went through German kindergarten and elementary school. Those years built my flexibility and empathy, and gave me the German that later made a career in Germany possible.">어린 나이에 낯선 해외로 이주해 유치원과 초등학교에서 독일 교육 과정을 경험했습니다. 그 시간은 유연함과 공감 능력을 길러주었고, 독일어를 자연스럽게 익혀 훗날 독일에서 커리어를 쌓을 수 있는 밑바탕이 되었습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+            <ul class="d-built">
+              <li data-ko="유연함" data-en="Flexibility">유연함</li>
+              <li data-ko="공감 능력" data-en="Empathy">공감 능력</li>
+              <li data-ko="독일어" data-en="German">독일어</li>
+            </ul>
+          </div>
         </li>
-        <li>
-          <span class="when" data-ko="10세" data-en="Age 10">10세</span>
-          <p data-ko="한국으로 돌아와 정규 과정을 마쳤습니다." data-en="Returned to Korea and completed my formal education.">한국으로 돌아와 정규 과정을 마쳤습니다.</p>
+
+        <li class="jitem" data-img="images/age10.jpg" data-pos="50% 75%">
+          <button class="jbtn" type="button" aria-haspopup="dialog">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="when" data-ko="10세" data-en="Age 10">10세</span>
+            <span class="jtext" data-ko="한국으로 돌아와 정규 과정을 마쳤습니다." data-en="Returned to Korea and completed my formal education.">한국으로 돌아와 정규 과정을 마쳤습니다.</span>
+          </button>
+          <div class="jdetail" hidden>
+            <h3 class="d-title" data-ko="돌아온 곳에서 다시 시작" data-en="Starting over, back home">돌아온 곳에서 다시 시작</h3>
+            <p class="d-lead" data-ko="두 번째 큰 변화 앞에서도 멈추지 않고 다시 적응했습니다." data-en="Facing a second big change, I adapted all over again.">두 번째 큰 변화 앞에서도 멈추지 않고 다시 적응했습니다.</p>
+            <p class="d-story" data-ko="10세에 한국으로 돌아와 새로운 환경에 다시 적응했고, 대학에서는 신문방송학과 독어독문학을 전공했습니다. 독일어를 놓지 않고 꾸준히 이어간 덕분에 두 언어와 두 문화를 모두 지킬 수 있었습니다."
+               data-en="I returned to Korea at ten and adapted to a new environment all over again. At university I majored in Journalism &amp; Mass Communication and German Language &amp; Literature. By never letting go of my German, I kept both languages and both cultures.">10세에 한국으로 돌아와 새로운 환경에 다시 적응했고, 대학에서는 신문방송학과 독어독문학을 전공했습니다. 독일어를 놓지 않고 꾸준히 이어간 덕분에 두 언어와 두 문화를 모두 지킬 수 있었습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+            <ul class="d-built">
+              <li data-ko="이중 언어" data-en="Bilingual">이중 언어</li>
+              <li data-ko="커뮤니케이션" data-en="Communication">커뮤니케이션</li>
+              <li data-ko="꾸준함" data-en="Consistency">꾸준함</li>
+            </ul>
+          </div>
         </li>
-        <li>
-          <span class="when">2014</span>
-          <p data-ko="해외 경력을 쌓기 위해 혼자 타지로 이주했습니다." data-en="Moved abroad on my own to build an international career.">해외 경력을 쌓기 위해 혼자 타지로 이주했습니다.</p>
+
+        <li class="jitem" data-img="images/2014.jpg" data-pos="50% 50%">
+          <button class="jbtn" type="button" aria-haspopup="dialog">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="when">2014</span>
+            <span class="jtext" data-ko="해외 경력을 쌓기 위해 혼자 타지로 이주했습니다." data-en="Moved abroad on my own to build an international career.">해외 경력을 쌓기 위해 혼자 타지로 이주했습니다.</span>
+          </button>
+          <div class="jdetail" hidden>
+            <h3 class="d-title" data-ko="혼자서 시작한 해외 커리어" data-en="An international career, started alone">혼자서 시작한 해외 커리어</h3>
+            <p class="d-lead" data-ko="혼자 내디딘 첫걸음이 글로벌 커리어의 시작이었습니다." data-en="That first step, taken alone, was the start of my global career.">혼자 내디딘 첫걸음이 글로벌 커리어의 시작이었습니다.</p>
+            <p class="d-story" data-ko="해외 경력을 쌓기 위해 혼자 타지로 이주했습니다. 다양한 사람들을 만나고 복잡하게 얽힌 이해관계자들 사이에서 일하며 글로벌 역량을 키웠습니다."
+               data-en="I moved abroad on my own to build an international career. Meeting people from many backgrounds and working among complex stakeholders, I grew my global capabilities.">해외 경력을 쌓기 위해 혼자 타지로 이주했습니다. 다양한 사람들을 만나고 복잡하게 얽힌 이해관계자들 사이에서 일하며 글로벌 역량을 키웠습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+            <ul class="d-built">
+              <li data-ko="글로벌 커뮤니케이션" data-en="Global communication">글로벌 커뮤니케이션</li>
+              <li data-ko="이해관계자 조율" data-en="Stakeholder alignment">이해관계자 조율</li>
+              <li data-ko="독립심" data-en="Independence">독립심</li>
+            </ul>
+          </div>
         </li>
-        <li>
-          <span class="when">2016 – 2026</span>
-          <p data-ko="독일에서 B2B 영업과 어카운트 매니지먼트를 했습니다. 자동차 부품 제조에서 글로벌 테크 플랫폼까지."
-             data-en="Worked in B2B sales and account management in Germany, from automotive parts manufacturing to a global tech platform.">독일에서 B2B 영업과 어카운트 매니지먼트를 했습니다. 자동차 부품 제조에서 글로벌 테크 플랫폼까지.</p>
+
+        <li class="jitem" data-img="images/career.jpg" data-pos="12% 50%">
+          <button class="jbtn" type="button" aria-haspopup="dialog">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="when">2016 – 2026</span>
+            <span class="jtext" data-ko="독일에서 B2B 영업과 어카운트 매니지먼트를 했습니다. 자동차 부품 제조에서 글로벌 테크 플랫폼까지."
+                  data-en="Worked in B2B sales and account management in Germany, from automotive parts manufacturing to a global tech platform.">독일에서 B2B 영업과 어카운트 매니지먼트를 했습니다. 자동차 부품 제조에서 글로벌 테크 플랫폼까지.</span>
+          </button>
+          <div class="jdetail" hidden>
+            <h3 class="d-title" data-ko="변화 속에서 성과를 만든 10년" data-en="A decade of building results through change">변화 속에서 성과를 만든 10년</h3>
+            <p class="d-lead" data-ko="업종이 바뀌어도 성과를 만드는 방식은 더 단단해졌습니다." data-en="The industry changed, but the way I deliver results only got stronger.">업종이 바뀌어도 성과를 만드는 방식은 더 단단해졌습니다.</p>
+            <p class="d-story" data-ko="자동차 부품 제조에서 글로벌 테크 플랫폼까지. 실패와 변화 속에서도 목표를 향한 끈기를 잃지 않았고, 변화를 받아들이는 겸손함으로 스스로 방향을 개척해 나갔습니다."
+               data-en="From automotive parts manufacturing to a global tech platform. Through setbacks and change, I never lost my persistence toward the goal, and with the humility to accept change, I charted my own direction.">자동차 부품 제조에서 글로벌 테크 플랫폼까지. 실패와 변화 속에서도 목표를 향한 끈기를 잃지 않았고, 변화를 받아들이는 겸손함으로 스스로 방향을 개척해 나갔습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+            <ul class="d-built">
+              <li data-ko="끈기" data-en="Grit">끈기</li>
+              <li data-ko="겸손" data-en="Humility">겸손</li>
+              <li data-ko="추진력" data-en="Drive">추진력</li>
+            </ul>
+          </div>
         </li>
-        <li>
-          <span class="when">2026</span>
-          <p data-ko="한국으로 돌아와 새로운 도전을 준비하고 있습니다." data-en="Back in Korea, preparing for the next challenge.">한국으로 돌아와 새로운 도전을 준비하고 있습니다.</p>
+
+        <li class="jitem" data-img="images/return2026.jpg" data-pos="50% 56%">
+          <button class="jbtn" type="button" aria-haspopup="dialog">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="when">2026</span>
+            <span class="jtext" data-ko="한국으로 돌아와 새로운 도전을 준비하고 있습니다." data-en="Back in Korea, preparing for the next challenge.">한국으로 돌아와 새로운 도전을 준비하고 있습니다.</span>
+          </button>
+          <div class="jdetail" hidden>
+            <h3 class="d-title" data-ko="제2의 도약" data-en="A second leap">제2의 도약</h3>
+            <p class="d-lead" data-ko="글로벌에서 쌓은 경험을 안고 돌아왔습니다." data-en="I'm back, carrying everything I built abroad.">글로벌에서 쌓은 경험을 안고 돌아왔습니다.</p>
+            <p class="d-story" data-ko="2026년 9월 1일, 한국으로 완전히 돌아왔습니다. 가족에 대한 그리움을 안고, 한국 시장에서 제 능력을 펼칠 수 있다는 기대로 두 번째 도약을 시작합니다. 시장은 달라도, 유연하게 적응하고 빠르게 배우는 사람이라는 점은 변하지 않습니다."
+               data-en="On September 1, 2026, I came home to Korea for good. Carrying how much I missed my family, and eager to apply my abilities in the Korean market, I'm starting my second leap. The market is different, but I am still someone who adapts flexibly and learns fast.">2026년 9월 1일, 한국으로 완전히 돌아왔습니다. 가족에 대한 그리움을 안고, 한국 시장에서 제 능력을 펼칠 수 있다는 기대로 두 번째 도약을 시작합니다. 시장은 달라도, 유연하게 적응하고 빠르게 배우는 사람이라는 점은 변하지 않습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+            <ul class="d-built">
+              <li data-ko="적응력" data-en="Adaptability">적응력</li>
+              <li data-ko="빠른 학습" data-en="Fast learning">빠른 학습</li>
+              <li data-ko="새로운 도전" data-en="New challenge">새로운 도전</li>
+            </ul>
+          </div>
         </li>
       </ol>
     </section>
@@ -164,6 +244,14 @@
     </section>
   </main>
 
-  <script src="script.js?v=4"></script>
+  <dialog class="jdialog" id="jdialog">
+    <button class="jclose" id="jclose" type="button" aria-label="닫기 (Close)">✕</button>
+    <div class="jd-grid">
+      <div class="jd-photo" id="jd-photo"><img id="jd-img" alt=""></div>
+      <div class="jd-body" id="jd-body"></div>
+    </div>
+  </dialog>
+
+  <script src="script.js?v=5"></script>
 </body>
 </html>

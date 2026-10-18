@@ -149,12 +149,73 @@ h1 span{display:block;font-size:.38em;font-weight:500;color:var(--muted);margin-
 
 .journey{list-style:none;margin:0;padding:0 0 0 22px;border-left:1px solid var(--line)}
 .journey li{position:relative;padding:0 0 28px 24px}
-.journey li::before{
-  content:"";position:absolute;left:-28px;top:7px;width:11px;height:11px;
-  border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(91,140,255,.2);
+/* 반짝이는 도트: 클릭하면 팝업이 열립니다 */
+.jbtn{
+  display:block;width:100%;padding:0;border:0;background:none;color:inherit;
+  font:inherit;text-align:left;cursor:pointer;-webkit-tap-highlight-color:transparent;
+}
+.jbtn:focus-visible{outline:2px solid var(--accent);outline-offset:6px;border-radius:8px}
+.journey .dot{
+  position:absolute;left:-29px;top:6px;width:13px;height:13px;border-radius:50%;
+  background:var(--accent);animation:twinkle 2.2s ease-in-out infinite;
+}
+.journey li:nth-child(2) .dot{animation-delay:.4s}
+.journey li:nth-child(3) .dot{animation-delay:.8s}
+.journey li:nth-child(4) .dot{animation-delay:1.2s}
+.journey li:nth-child(5) .dot{animation-delay:1.6s}
+@keyframes twinkle{
+  0%{box-shadow:0 0 0 0 rgba(91,140,255,.7);filter:brightness(1)}
+  45%{filter:brightness(1.6)}
+  75%{box-shadow:0 0 0 13px rgba(91,140,255,0)}
+  100%{box-shadow:0 0 0 0 rgba(91,140,255,0);filter:brightness(1)}
+}
+.jbtn:hover .dot{background:var(--accent2)}
+.jbtn:hover .jtext{color:var(--accent2)}
+@media (prefers-reduced-motion:reduce){
+  .journey .dot{animation:none;box-shadow:0 0 0 4px rgba(91,140,255,.25)}
+  .jdialog[open]{animation:none}
+}
+
+/* 팝업 (사진 + 설명) */
+.jdialog{
+  padding:0;border:1px solid var(--line);border-radius:20px;
+  background:#111827;color:var(--fg);width:min(92vw,900px);max-height:90vh;
+  overflow:auto;box-shadow:0 24px 80px rgba(0,0,0,.6);
+}
+.jdialog::backdrop{background:rgba(4,7,14,.72);backdrop-filter:blur(4px)}
+.jdialog[open]{animation:jpop .28s ease-out}
+@keyframes jpop{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+html:has(dialog[open]){overflow:hidden}
+.jclose{
+  position:absolute;top:12px;right:12px;z-index:2;width:38px;height:38px;
+  border-radius:50%;border:1px solid var(--line);background:rgba(10,14,26,.7);
+  color:var(--fg);font-size:16px;cursor:pointer;
+}
+.jclose:hover{background:rgba(255,255,255,.16)}
+.jd-grid{display:grid;grid-template-columns:1fr}
+.jd-photo{
+  position:relative;height:250px;
+  background:linear-gradient(135deg,#1c2a4a,#0e1424 60%,#1f3b37);
+}
+.jd-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.jd-photo.noimg img{display:none}
+.jd-body{padding:28px 26px 30px}
+.d-title{margin:0 0 8px;font-size:clamp(22px,3vw,28px);line-height:1.3}
+.d-lead{margin:0 0 16px;color:var(--accent2);font-weight:600}
+.d-story{margin:0 0 22px;line-height:1.8}
+.d-label{display:block;margin:0 0 8px;color:var(--muted);font-size:13px;letter-spacing:.04em}
+.d-built{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.d-built li{
+  border:1px solid var(--line);background:rgba(255,255,255,.06);
+  border-radius:999px;padding:4px 12px;font-size:14px;
+}
+@media(min-width:760px){
+  .jd-grid{grid-template-columns:1fr 1.15fr}
+  .jd-photo{height:auto;min-height:480px}
+  .jd-body{padding:44px 36px 40px;align-self:center}
 }
 .journey .when{display:block;color:var(--accent2);font-weight:700;font-size:14px;letter-spacing:.04em}
-.journey p{margin:2px 0 0;max-width:640px}
+.jtext{display:block;margin:2px 0 0;max-width:640px;transition:color .2s}
 
 .next-row{display:flex;gap:12px;flex-wrap:wrap}
 .btn{
