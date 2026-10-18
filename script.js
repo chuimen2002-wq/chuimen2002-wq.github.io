@@ -21,6 +21,14 @@ document.getElementById("lang").addEventListener("click", function () {
 
 setLang(getLang());
 
+// 뒤집히는 카드: 클릭(또는 Enter/Space)하면 앞뒤가 바뀝니다.
+document.querySelectorAll(".flip").forEach(function (card) {
+  card.addEventListener("click", function () {
+    var on = card.getAttribute("aria-pressed") === "true";
+    card.setAttribute("aria-pressed", on ? "false" : "true");
+  });
+});
+
 // JGH 드롭다운 메뉴: 클릭하면 열리고, 바깥을 클릭하거나 Esc를 누르면 닫힙니다.
 (function () {
   var btn = document.getElementById("menu-btn");

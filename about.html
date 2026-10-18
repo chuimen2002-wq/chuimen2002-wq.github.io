@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me | Joon Gul Hong</title>
   <meta name="description" content="Joon Gul Hong - About Me">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body class="page">
   <header class="top">
@@ -39,25 +39,62 @@
     <!-- 2. 일하는 방식 -->
     <section class="sec">
       <h2 data-ko="일하는 방식" data-en="How I work">일하는 방식</h2>
-      <div class="cards3">
-        <article class="card">
-          <span class="num">01</span>
-          <h3 data-ko="제품이 아니라 솔루션" data-en="Solutions, not products">제품이 아니라 솔루션</h3>
-          <p data-ko="고객이 풀고 싶은 문제에서 출발합니다. 필요한 것을 함께 설계하는 컨설팅 방식으로 영업합니다."
-             data-en="I start from the problem the customer wants to solve and sell consultatively, designing what they need together.">고객이 풀고 싶은 문제에서 출발합니다. 필요한 것을 함께 설계하는 컨설팅 방식으로 영업합니다.</p>
-        </article>
-        <article class="card">
-          <span class="num">02</span>
-          <h3 data-ko="함께 성장하는 파트너십" data-en="Growing together">함께 성장하는 파트너십</h3>
-          <p data-ko="파트너의 성장을 이끌고, 그 성장이 회사의 수익으로 이어지도록 만듭니다. 동반 성장이 목표입니다."
-             data-en="I drive partner growth and turn it into company revenue, so both sides grow together.">파트너의 성장을 이끌고, 그 성장이 회사의 수익으로 이어지도록 만듭니다. 동반 성장이 목표입니다.</p>
-        </article>
-        <article class="card">
-          <span class="num">03</span>
-          <h3 data-ko="데이터가 대화입니다" data-en="Data is the conversation">데이터가 대화입니다</h3>
-          <p data-ko="데이터로 대화하고, 데이터로 의사결정을 합니다."
-             data-en="I talk in data and make decisions with data.">데이터로 대화하고, 데이터로 의사결정을 합니다.</p>
-        </article>
+      <p class="lead2"
+         data-ko="카드를 클릭하면 뒤집혀서 설명이 나옵니다."
+         data-en="Click a card to flip it and read more.">카드를 클릭하면 뒤집혀서 설명이 나옵니다.</p>
+      <div class="flip-grid">
+        <button class="flip" type="button" aria-pressed="false">
+          <span class="flip-inner">
+            <span class="face front">
+              <span class="num">01</span>
+              <strong class="ft" data-ko="제품이 아니라 솔루션" data-en="Solutions, not products">제품이 아니라 솔루션</strong>
+              <span class="hint" aria-hidden="true">↻</span>
+            </span>
+            <span class="face back">
+              <span class="fb" data-ko="고객의 문제에서 출발해, 필요한 것을 함께 설계합니다."
+                    data-en="I start from the customer's problem and design what they need together.">고객의 문제에서 출발해, 필요한 것을 함께 설계합니다.</span>
+            </span>
+          </span>
+        </button>
+        <button class="flip" type="button" aria-pressed="false">
+          <span class="flip-inner">
+            <span class="face front">
+              <span class="num">02</span>
+              <strong class="ft" data-ko="함께 성장하는 파트너십" data-en="Growing together">함께 성장하는 파트너십</strong>
+              <span class="hint" aria-hidden="true">↻</span>
+            </span>
+            <span class="face back">
+              <span class="fb" data-ko="파트너의 성장이 회사의 수익으로 이어지도록 만듭니다."
+                    data-en="I turn partner growth into company revenue, so both sides grow.">파트너의 성장이 회사의 수익으로 이어지도록 만듭니다.</span>
+            </span>
+          </span>
+        </button>
+        <button class="flip" type="button" aria-pressed="false">
+          <span class="flip-inner">
+            <span class="face front">
+              <span class="num">03</span>
+              <strong class="ft" data-ko="데이터가 대화입니다" data-en="Data is the conversation">데이터가 대화입니다</strong>
+              <span class="hint" aria-hidden="true">↻</span>
+            </span>
+            <span class="face back">
+              <span class="fb" data-ko="데이터로 대화하고, 데이터로 결정합니다."
+                    data-en="I talk in data and decide with data.">데이터로 대화하고, 데이터로 결정합니다.</span>
+            </span>
+          </span>
+        </button>
+        <button class="flip" type="button" aria-pressed="false">
+          <span class="flip-inner">
+            <span class="face front">
+              <span class="num">04</span>
+              <strong class="ft" data-ko="팀과 팀 사이를 잇습니다" data-en="Connecting teams">팀과 팀 사이를 잇습니다</strong>
+              <span class="hint" aria-hidden="true">↻</span>
+            </span>
+            <span class="face back">
+              <span class="fb" data-ko="부서 사이를 연결해 일이 막히지 않게 하고, 절차를 단순하게 만듭니다."
+                    data-en="I connect teams so work doesn't stall, and I simplify processes.">부서 사이를 연결해 일이 막히지 않게 하고, 절차를 단순하게 만듭니다.</span>
+            </span>
+          </span>
+        </button>
       </div>
     </section>
 
@@ -127,6 +164,6 @@
     </section>
   </main>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>
