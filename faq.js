@@ -71,9 +71,9 @@ var FAQ = [
     chip: true,
     q: { ko: "어떻게 연락하면 되나요?", en: "How can I contact you?", de: "Wie kann ich Sie erreichen?" },
     a: {
-      ko: "이 페이지 아래의 연락처 카드에서 확인하실 수 있습니다.",
-      en: "You can find my contact details in the card just below on this page.",
-      de: "Meine Kontaktdaten finden Sie weiter unten auf dieser Seite."
+      ko: "이메일과 LinkedIn으로 연락하실 수 있습니다. 이 페이지 아래의 연락처 카드에서 확인해 주세요.",
+      en: "You can reach me by email or LinkedIn. Both are in the contact cards just below on this page.",
+      de: "Sie erreichen mich per E-Mail oder LinkedIn. Beides finden Sie in den Kontaktkarten weiter unten auf dieser Seite."
     },
     go: "contact.html#contact-info",
     go_label: { ko: "연락처로 이동", en: "Go to contact details", de: "Zu den Kontaktdaten" },

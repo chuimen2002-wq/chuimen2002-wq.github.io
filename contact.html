@@ -51,11 +51,10 @@
           <a class="cval" id="c-linkedin-a" href="#" target="_blank" rel="noopener noreferrer"></a>
           <span class="cnote" data-ko="경력과 추천 내용을 볼 수 있습니다." data-en="See my experience and recommendations." data-de="Erfahrung und Empfehlungen ansehen.">경력과 추천 내용을 볼 수 있습니다.</span>
         </div>
-        <div class="ccard" id="c-phone" hidden>
-          <span class="ctag">Phone</span>
-          <button class="cbtn" id="c-phone-btn" type="button" data-ko="전화번호 보기" data-en="Show phone number" data-de="Telefonnummer anzeigen">전화번호 보기</button>
-          <a class="cval" id="c-phone-a" href="#" hidden></a>
-          <span class="cnote" data-ko="채용·협업 문의에 한해 이용해 주세요." data-en="Please use it for hiring and collaboration inquiries only." data-de="Bitte nur für Recruiting- und Kooperationsanfragen nutzen.">채용·협업 문의에 한해 이용해 주세요.</span>
+        <div class="ccard" id="c-github" hidden>
+          <span class="ctag">GitHub</span>
+          <a class="cval" id="c-github-a" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <span class="cnote" data-ko="이 사이트를 만든 과정과 코드를 볼 수 있습니다." data-en="See how this site was built, and its code." data-de="Den Aufbau dieser Website und den Code ansehen.">이 사이트를 만든 과정과 코드를 볼 수 있습니다.</span>
         </div>
       </div>
       <p class="cempty" id="c-empty" hidden data-ko="연락처 정보는 곧 추가됩니다." data-en="Contact details are coming soon." data-de="Kontaktdaten folgen in Kürze.">연락처 정보는 곧 추가됩니다.</p>
@@ -70,20 +69,20 @@
   </main>
 
   <script src="script.js?v=20"></script>
-  <script src="faq.js?v=2"></script>
+  <script src="faq.js?v=3"></script>
   <script>
     // 연락처 값을 여기에서만 바꾸면 됩니다. 비워 두면 그 항목은 화면에 나타나지 않습니다.
     // 이메일은 앞부분(user)과 도메인(domain)을 나눠 적어 스팸 수집 프로그램을 조금 막습니다.
-    // 전화번호는 "전화번호 보기"를 눌러야 보입니다.
     var CONTACT = {
-      emailUser: "",
-      emailDomain: "",
-      linkedin: "",   // 예: "https://www.linkedin.com/in/아이디"
-      phone: ""       // 예: "+82 10-0000-0000"
+      emailUser: "joongul.hong",
+      emailDomain: "gmail.com",
+      linkedin: "https://www.linkedin.com/in/joongulhong/",
+      github: "https://github.com/chuimen2002-wq"
     };
     (function () {
       var shown = 0;
       function show(id) { document.getElementById(id).hidden = false; shown++; }
+      function pretty(u) { return u.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""); }
       if (CONTACT.emailUser && CONTACT.emailDomain) {
         var addr = CONTACT.emailUser + "@" + CONTACT.emailDomain;
         var a = document.getElementById("c-email-a");
@@ -92,19 +91,13 @@
       }
       if (CONTACT.linkedin) {
         var l = document.getElementById("c-linkedin-a");
-        l.textContent = CONTACT.linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
-        l.href = CONTACT.linkedin;
+        l.textContent = pretty(CONTACT.linkedin); l.href = CONTACT.linkedin;
         show("c-linkedin");
       }
-      if (CONTACT.phone) {
-        show("c-phone");
-        document.getElementById("c-phone-btn").addEventListener("click", function () {
-          var p = document.getElementById("c-phone-a");
-          p.textContent = CONTACT.phone;
-          p.href = "tel:" + CONTACT.phone.replace(/[^+\d]/g, "");
-          p.hidden = false;
-          this.hidden = true;
-        });
+      if (CONTACT.github) {
+        var g = document.getElementById("c-github-a");
+        g.textContent = pretty(CONTACT.github); g.href = CONTACT.github;
+        show("c-github");
       }
       if (!shown) document.getElementById("c-empty").hidden = false;
     })();
