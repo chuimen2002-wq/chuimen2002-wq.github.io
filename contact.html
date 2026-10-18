@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Joon Gul Hong</title>
+  <meta name="description" content="Joon Gul Hong - Contact">
+  <link rel="stylesheet" href="style.css?v=20">
+</head>
+<body class="page">
+  <header class="top">
+    <div class="dropdown" id="menu">
+      <button class="brand" id="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu-list">
+        <span data-ko="Menu" data-en="Menu" data-de="Menü">Menu</span> <span class="caret" aria-hidden="true">▾</span>
+      </button>
+      <ul class="menu-list" id="menu-list" hidden>
+        <li><a href="index.html" data-ko="Home" data-en="Home" data-de="Startseite">Home</a></li>
+        <li><a href="about.html" data-ko="About Me" data-en="About Me" data-de="Über mich">About Me</a></li>
+        <li><a href="career.html" data-ko="My Career" data-en="My Career" data-de="Mein Werdegang">My Career</a></li>
+        <li><a href="achievements.html" data-ko="My Key Achievement" data-en="My Key Achievement" data-de="Meine wichtigsten Erfolge">My Key Achievement</a></li>
+        <li><a href="contact.html" aria-current="page" data-ko="Contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
+      </ul>
+    </div>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" class="flag" data-lang="ko" aria-pressed="true" aria-label="한국어" title="한국어"><img src="images/flags/kr.svg" alt="" width="26" height="19"></button>
+      <button type="button" class="flag" data-lang="en" aria-pressed="false" aria-label="English" title="English"><img src="images/flags/gb.svg" alt="" width="26" height="19"></button>
+      <button type="button" class="flag" data-lang="de" aria-pressed="false" aria-label="Deutsch" title="Deutsch"><img src="images/flags/de.svg" alt="" width="26" height="19"></button>
+    </div>
+  </header>
+
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <main>
+    <section class="sec first">
+      <p class="eyebrow">Contact</p>
+      <h1 data-ko="함께 이야기해 보세요" data-en="Let&#x27;s talk" data-de="Lassen Sie uns sprechen">함께 이야기해 보세요</h1>
+      <p class="tagline" data-ko="궁금한 점은 오른쪽 아래 FAQ에 바로 물어보시고, 더 이야기하고 싶으시면 아래 연락처로 편하게 연락 주세요." data-en="Ask the FAQ at the bottom right for quick answers, and reach out below if you'd like to talk further." data-de="Für schnelle Antworten nutzen Sie die FAQ unten rechts; für ein Gespräch melden Sie sich gern über die Kontaktdaten unten.">궁금한 점은 오른쪽 아래 FAQ에 바로 물어보시고, 더 이야기하고 싶으시면 아래 연락처로 편하게 연락 주세요.</p>
+    </section>
+
+    <section class="sec" id="contact-info">
+      <p class="eyebrow">Contact details</p>
+      <h2 data-ko="연락처" data-en="Contact details" data-de="Kontaktdaten">연락처</h2>
+      <div class="ccards">
+        <div class="ccard" id="c-email" hidden>
+          <span class="ctag">Email</span>
+          <a class="cval" id="c-email-a" href="#"></a>
+          <span class="cnote" data-ko="이메일이 가장 빠릅니다." data-en="Email is the fastest way." data-de="E-Mail ist der schnellste Weg.">이메일이 가장 빠릅니다.</span>
+        </div>
+        <div class="ccard" id="c-linkedin" hidden>
+          <span class="ctag">LinkedIn</span>
+          <a class="cval" id="c-linkedin-a" href="#" target="_blank" rel="noopener noreferrer"></a>
+          <span class="cnote" data-ko="경력과 추천 내용을 볼 수 있습니다." data-en="See my experience and recommendations." data-de="Erfahrung und Empfehlungen ansehen.">경력과 추천 내용을 볼 수 있습니다.</span>
+        </div>
+        <div class="ccard" id="c-phone" hidden>
+          <span class="ctag">Phone</span>
+          <button class="cbtn" id="c-phone-btn" type="button" data-ko="전화번호 보기" data-en="Show phone number" data-de="Telefonnummer anzeigen">전화번호 보기</button>
+          <a class="cval" id="c-phone-a" href="#" hidden></a>
+          <span class="cnote" data-ko="채용·협업 문의에 한해 이용해 주세요." data-en="Please use it for hiring and collaboration inquiries only." data-de="Bitte nur für Recruiting- und Kooperationsanfragen nutzen.">채용·협업 문의에 한해 이용해 주세요.</span>
+        </div>
+      </div>
+      <p class="cempty" id="c-empty" hidden data-ko="연락처 정보는 곧 추가됩니다." data-en="Contact details are coming soon." data-de="Kontaktdaten folgen in Kürze.">연락처 정보는 곧 추가됩니다.</p>
+    </section>
+
+    <section class="sec last">
+      <div class="next-row">
+        <a class="btn" href="index.html" data-ko="처음으로 →" data-en="Back to Home →" data-de="Zur Startseite →">처음으로 →</a>
+        <a class="btn ghost" href="achievements.html" data-ko="← My Key Achievement" data-en="← My Key Achievement" data-de="← Meine wichtigsten Erfolge">← My Key Achievement</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js?v=20"></script>
+  <script src="faq.js?v=1"></script>
+  <script>
+    // 연락처 값을 여기에서만 바꾸면 됩니다. 비워 두면 그 항목은 화면에 나타나지 않습니다.
+    // 이메일은 앞부분(user)과 도메인(domain)을 나눠 적어 스팸 수집 프로그램을 조금 막습니다.
+    // 전화번호는 "전화번호 보기"를 눌러야 보입니다.
+    var CONTACT = {
+      emailUser: "",
+      emailDomain: "",
+      linkedin: "",   // 예: "https://www.linkedin.com/in/아이디"
+      phone: ""       // 예: "+82 10-0000-0000"
+    };
+    (function () {
+      var shown = 0;
+      function show(id) { document.getElementById(id).hidden = false; shown++; }
+      if (CONTACT.emailUser && CONTACT.emailDomain) {
+        var addr = CONTACT.emailUser + "@" + CONTACT.emailDomain;
+        var a = document.getElementById("c-email-a");
+        a.textContent = addr; a.href = "mailto:" + addr;
+        show("c-email");
+      }
+      if (CONTACT.linkedin) {
+        var l = document.getElementById("c-linkedin-a");
+        l.textContent = CONTACT.linkedin.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+        l.href = CONTACT.linkedin;
+        show("c-linkedin");
+      }
+      if (CONTACT.phone) {
+        show("c-phone");
+        document.getElementById("c-phone-btn").addEventListener("click", function () {
+          var p = document.getElementById("c-phone-a");
+          p.textContent = CONTACT.phone;
+          p.href = "tel:" + CONTACT.phone.replace(/[^+\d]/g, "");
+          p.hidden = false;
+          this.hidden = true;
+        });
+      }
+      if (!shown) document.getElementById("c-empty").hidden = false;
+    })();
+  </script>
+</body>
+</html>
