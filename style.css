@@ -319,6 +319,26 @@ html:has(dialog[open]){overflow:hidden}
 .lcard b{display:block;font-size:18px;margin-bottom:6px}
 .lcard p{margin:0;color:var(--muted);line-height:1.6}
 
+/* Case 02: 꺾은선 그래프와 비교표 */
+.lc-grid{stroke:var(--line);stroke-width:1;stroke-dasharray:4 6}
+.lc-base{stroke:var(--muted);stroke-width:1.5}
+.lc-y{fill:var(--muted);font-size:14px}
+.lc-down{fill:none;stroke:#ff8a8a;stroke-width:3;stroke-linecap:round}
+.lc-up{fill:none;stroke:var(--accent2);stroke-width:3;stroke-linecap:round;filter:drop-shadow(0 0 5px rgba(139,227,201,.6))}
+.lc-pt{fill:#0c1220;stroke:var(--accent);stroke-width:3}
+.lc-pt.bad{stroke:#ff8a8a}.lc-pt.good{stroke:var(--accent2)}
+.lc-band{fill:rgba(139,227,201,.18);stroke:var(--accent2);stroke-width:1.5;stroke-dasharray:4 3}
+.lc-v{fill:var(--fg);font-size:18px;font-weight:700}
+.lc-v.bad{fill:#ff8a8a}.lc-v.good{fill:var(--accent2)}
+.lc-x{fill:var(--muted);font-size:14px}
+.cmp{display:grid;gap:0}
+.crow{display:grid;grid-template-columns:minmax(70px,.8fr) 1.2fr 1.4fr;gap:12px;padding:12px 0;border-top:1px solid var(--line);align-items:start;font-size:15px;line-height:1.5}
+.crow:first-child{border-top:0}
+.crow .cl{font-weight:700}
+.crow .cb{color:var(--muted)}
+.crow .ca{color:var(--accent2)}
+.crow.chead{font-size:13px;font-weight:700;letter-spacing:.06em;padding-top:0}
+
 @media(prefers-reduced-motion:reduce){.bar .bt i{transition:none}}
 /* 넓은 화면: 글과 그림을 나란히 놓아 스크롤을 줄입니다 */
 .split{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
