@@ -321,6 +321,8 @@ html:has(dialog[open]){overflow:hidden}
 .sum-me{padding:28px;border:1px solid var(--accent2);border-radius:18px;background:rgba(139,227,201,.07)}
 .sum-me .ltag{border-color:var(--accent2);color:var(--accent2);margin-bottom:12px}
 .sum-me p{margin:0;max-width:760px;font-size:clamp(16px,1.9vw,19px);line-height:1.8}
+.sum-me p+p{margin-top:16px;color:var(--muted)}
+.sum-me .sum-punch{font-size:clamp(20px,2.8vw,28px);font-weight:700;line-height:1.45;letter-spacing:-.01em;color:var(--fg)}
 .lens{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:0 0 36px}
 .lcard{padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.05)}
 .lcard.emp{border-color:var(--accent2);background:rgba(139,227,201,.09)}
