@@ -24,11 +24,10 @@
     try { return localStorage.getItem("lang") === "ko" || !localStorage.getItem("lang") ? "ko" : "en"; }
     catch (e) { return "ko"; }
   }
-  // FAQ 버튼(오른쪽 아래)과 겹치지 않도록 채널톡 버튼을 그 위로 올립니다.
+  // 채널톡 버튼은 기본 위치(오른쪽 아래)에 두고, FAQ 버튼이 그 왼쪽으로 비켜 있습니다.
   w.ChannelIO("boot", {
     pluginKey: "3e091630-88bf-44d9-b22a-a745f59ffdbd",
-    language: lang(),
-    channelButtonOption: { position: "right", xMargin: 24, yMargin: 90 }
+    language: lang()
   });
   document.addEventListener("click", function (e) {
     var f = e.target.closest && e.target.closest(".flag[data-lang]");
