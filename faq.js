@@ -80,6 +80,17 @@ var FAQ = [
     k: ["연락", "이메일", "메일", "전화", "링크드인", "linkedin", "contact", "email", "phone", "reach", "mail", "kontakt", "telefon", "erreichen"]
   },
   {
+    q: { ko: "희망 연봉은 어떻게 되나요?", en: "What are your salary expectations?", de: "Wie hoch sind Ihre Gehaltsvorstellungen?" },
+    a: {
+      ko: "연락을 주시면 자세하게 협의 드리도록 하겠습니다.",
+      en: "Please get in touch and I will be glad to discuss it in detail.",
+      de: "Nehmen Sie gern Kontakt auf, dann besprechen wir das ausführlich."
+    },
+    go: "contact.html#contact-info",
+    go_label: { ko: "연락처로 이동", en: "Go to contact details", de: "Zu den Kontaktdaten" },
+    k: ["연봉", "급여", "희망연봉", "처우", "보수", "월급", "salary", "compensation", "expectation", "gehalt", "gehaltsvorstellung", "vergütung"]
+  },
+  {
     q: { ko: "이력서를 받을 수 있나요?", en: "Can I download your resume?", de: "Kann ich Ihren Lebenslauf herunterladen?" },
     a: {
       ko: "네, 국문과 영문 이력서를 PDF로 내려받으실 수 있습니다.",
