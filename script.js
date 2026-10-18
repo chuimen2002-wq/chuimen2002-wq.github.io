@@ -90,3 +90,33 @@ document.querySelectorAll(".flip").forEach(function (card) {
     if (e.key === "Escape") { setOpen(false); btn.focus(); }
   });
 })();
+
+// 성과 페이지: 화면에 들어오면 숫자가 0에서 올라가고, 막대가 차오릅니다.
+(function () {
+  var nums = document.querySelectorAll("[data-count]");
+  var bars = document.querySelectorAll(".bars");
+  if (!("IntersectionObserver" in window)) return;
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) return;
+  if (bars.length) document.documentElement.classList.add("js-anim");
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      io.unobserve(en.target);
+      var el = en.target;
+      if (el.hasAttribute("data-count")) {
+        var end = parseInt(el.getAttribute("data-count"), 10), t0 = null;
+        function step(t) {
+          if (t0 === null) t0 = t;
+          var p = Math.min((t - t0) / 1600, 1);
+          el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(step);
+        }
+        el.textContent = "0";
+        requestAnimationFrame(step);
+      } else { el.classList.add("in"); }
+    });
+  }, { threshold: 0.4 });
+  nums.forEach(function (n) { io.observe(n); });
+  bars.forEach(function (b) { io.observe(b); });
+})();
