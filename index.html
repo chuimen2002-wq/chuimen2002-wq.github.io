@@ -9,7 +9,17 @@
 </head>
 <body class="home">
   <header class="top">
-    <span class="brand">JGH</span>
+    <div class="dropdown" id="menu">
+      <button class="brand" id="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu-list">
+        JGH <span class="caret" aria-hidden="true">▾</span>
+      </button>
+      <ul class="menu-list" id="menu-list" hidden>
+        <li><a href="about.html" data-ko="About Me" data-en="About Me"></a></li>
+        <li><a href="career.html" data-ko="My Career" data-en="My Career"></a></li>
+        <li><a href="achievements.html" data-ko="My Key Achievement" data-en="My Key Achievement"></a></li>
+        <li><a href="contact.html" data-ko="Contact" data-en="Contact"></a></li>
+      </ul>
+    </div>
     <button id="lang" type="button" aria-label="Switch language">EN</button>
   </header>
 
