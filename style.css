@@ -129,6 +129,7 @@ h1 span{display:block;font-size:.38em;font-weight:500;color:var(--muted);margin-
   transition:transform .6s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d;
 }
 .flip[aria-pressed="true"] .flip-inner{transform:rotateY(180deg)}
+.flip.tall{height:240px}
 .flip:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:18px}
 .face{
   position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;gap:8px;
@@ -234,6 +235,7 @@ html:has(dialog[open]){overflow:hidden}
 @media(max-width:600px){
   .flip-grid{grid-template-columns:1fr}
   .flip{height:170px}
+  .flip.tall{height:230px}
   .sec{padding:56px 24px}
   .sec.first{padding-top:120px}
   .slide{padding:96px 24px 40px;gap:36px}
