@@ -308,11 +308,10 @@ html:has(dialog[open]){overflow:hidden}
 .js-anim .bars.in .bar .bt i{width:var(--w)}
 .lesson{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:28px;border:1px solid var(--accent2);border-radius:18px;background:rgba(139,227,201,.07)}
 .lesson-art{max-width:300px;margin:0 auto}
-.hands{display:block;width:100%;height:auto}
-.hands .hl{stroke:var(--accent)}.hands .hr{stroke:var(--accent2)}.hands .f{fill:rgba(12,18,32,.85)}.hands .f2{fill:rgba(139,227,201,.16)}.hands .hl.f2{fill:rgba(91,140,255,.22)}
-.hands .sp{fill:var(--accent2);animation:twinkle 2.4s ease-in-out infinite}
+.hands{display:block;width:70%;max-width:220px;height:auto;margin:0 auto;color:var(--accent2);filter:drop-shadow(0 0 8px rgba(139,227,201,.6))}
+.lesson-art{padding:24px 0;background:radial-gradient(circle at 50% 50%,rgba(139,227,201,.28),transparent 62%)}
 @media(min-width:760px){.lesson{grid-template-columns:300px 1fr;gap:36px;padding:36px}}
-@media(prefers-reduced-motion:reduce){.bar .bt i{transition:none}.hands .sp{animation:none}}
+@media(prefers-reduced-motion:reduce){.bar .bt i{transition:none}}
 @media(max-width:600px){.bar{grid-template-columns:1fr auto}.bar .bl{grid-column:1/-1}.bar .bt{grid-column:1}.fig{padding:16px}}
 
 @media(max-width:600px){
