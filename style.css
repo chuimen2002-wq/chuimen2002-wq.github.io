@@ -381,3 +381,28 @@ html:has(dialog[open]){overflow:hidden}
   .slide{padding:96px 24px 40px;gap:36px}
   .top{padding:14px 18px}
 }
+
+/* ===== My Career v2: 세로 타임라인 + Uber 상세 ===== */
+.tl{position:relative;max-width:1040px;margin-top:8px;padding-left:34px;border-left:2px solid var(--line);display:grid;gap:18px}
+.tl-item{position:relative}
+.tl-item::before{content:"";position:absolute;left:-41px;top:30px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(91,140,255,.2)}
+.tl-item.gap::before{background:var(--bg);border:2px solid var(--accent);box-sizing:border-box;box-shadow:none}
+.tl-item.hl::before{background:var(--accent2);box-shadow:0 0 0 5px rgba(139,227,201,.25)}
+.tl-item.hl .face.front{border-color:var(--accent2);background:rgba(139,227,201,.07)}
+.tl-item.branch{padding-left:28px}
+.tl-item.branch::before{width:8px;height:8px;left:-39px;top:34px;background:transparent;border:2px solid var(--accent);box-sizing:content-box;box-shadow:none}
+.btag{display:block;margin:0 0 8px;color:var(--accent2);font-size:13px;font-weight:600;letter-spacing:.02em}
+.jump{display:inline-block;margin:10px 0 0 4px;color:var(--accent2);font-weight:600;font-size:14px}
+.jump:hover{text-decoration:underline}
+#uber{scroll-margin-top:84px}
+.ujourney.rich .ustep{padding-bottom:36px}
+.ujourney.rich .ustep:last-child{padding-bottom:0}
+.urole{display:block;margin-top:2px;font-size:clamp(18px,2vw,22px);line-height:1.35}
+.usub{display:block;margin:2px 0 8px;color:var(--accent2);font-size:15px;font-weight:600}
+.ustep .utext{color:var(--muted);font-size:15px;line-height:1.6;margin-bottom:2px}
+.ustep .ilist{margin-top:10px}
+.ustep .il{color:var(--fg)}
+.ustep.minor .urole{font-size:16px;color:var(--muted);font-weight:600}
+.ustep.minor::before{width:8px;height:8px;background:transparent;border:2px solid var(--accent);box-shadow:none;box-sizing:content-box}
+@media(min-width:1100px){.split>.sticky{position:sticky;top:96px}}
+@media(max-width:600px){.tl{padding-left:26px}.tl-item::before{left:-33px}.tl-item.branch{padding-left:16px}.tl-item.branch::before{left:-31px}}
