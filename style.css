@@ -15,6 +15,8 @@ body{
   font:16px/1.6 -apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Segoe UI",sans-serif;
 }
 a{color:inherit;text-decoration:none}
+/* 한국어가 단어 중간에서 줄바꿈되지 않게 */
+body{word-break:keep-all;overflow-wrap:break-word}
 
 /* 상단 바 */
 .top{
@@ -84,7 +86,57 @@ h1 span{display:block;font-size:.38em;font-weight:500;color:var(--muted);margin-
 .tile strong{font-size:19px}
 .tile small{color:var(--muted);font-size:14px}
 
+/* 현재 보고 있는 페이지 표시 */
+.menu-list a[aria-current="page"]{color:var(--accent2);font-weight:600}
+
+/* ===== 서브페이지 공통 ===== */
+.page{scroll-snap-type:y proximity}
+.page .hero-bg{position:fixed}
+.page h1{font-size:clamp(32px,6vw,64px);line-height:1.2}
+.sec{
+  position:relative;z-index:1;max-width:1100px;margin:0 auto;
+  padding:72px 8vw;scroll-snap-align:start;
+}
+.sec.first{padding-top:150px}
+.sec.last{padding-bottom:120px}
+.sec h2{font-size:clamp(26px,4vw,40px);margin:0 0 28px;letter-spacing:-.01em}
+.lead2{color:var(--muted);margin:-12px 0 28px;max-width:640px}
+
+.cards3{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{
+  padding:24px;border:1px solid var(--line);border-radius:16px;
+  background:rgba(255,255,255,.05);backdrop-filter:blur(6px);
+}
+.card .num{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.1em}
+.card h3{margin:6px 0 10px;font-size:20px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+
+.quote{
+  margin:0;padding:12px 0 12px 28px;border-left:3px solid var(--accent2);
+}
+.quote p{margin:0 0 16px;font-size:clamp(21px,3.2vw,32px);line-height:1.5;font-weight:600}
+.quote cite{display:block;font-style:normal;color:var(--muted);font-size:14px}
+
+.journey{list-style:none;margin:0;padding:0 0 0 22px;border-left:1px solid var(--line)}
+.journey li{position:relative;padding:0 0 28px 24px}
+.journey li::before{
+  content:"";position:absolute;left:-28px;top:7px;width:11px;height:11px;
+  border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(91,140,255,.2);
+}
+.journey .when{display:block;color:var(--accent2);font-weight:700;font-size:14px;letter-spacing:.04em}
+.journey p{margin:2px 0 0;max-width:640px}
+
+.next-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:12px 20px;border-radius:12px;font-weight:600;
+  background:var(--accent);color:#fff;transition:filter .2s;
+}
+.btn:hover{filter:brightness(1.12)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+
 @media(max-width:600px){
+  .sec{padding:56px 24px}
+  .sec.first{padding-top:120px}
   .slide{padding:96px 24px 40px;gap:36px}
   .top{padding:14px 18px}
 }
