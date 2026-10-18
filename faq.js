@@ -317,6 +317,8 @@ function faqFind(query) {
       var b = addBubble("bot", tx(hit.a));
       var a = el("a", "faq-go", tx(hit.go_label) + " →");
       a.href = hit.go;
+      // 같은 페이지 안에서 이동할 때 위젯이 내용을 가리지 않도록 닫습니다.
+      a.addEventListener("click", function () { setOpen(false); });
       b.appendChild(a);
     } else {
       addBubble("bot", tx(FAQ_TEXT.notFound));
