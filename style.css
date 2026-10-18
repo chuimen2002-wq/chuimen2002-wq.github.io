@@ -473,3 +473,9 @@ html:has(dialog[open]){overflow:hidden}
 .strn .ev{color:var(--muted);font-size:15px;line-height:1.65;flex:1}
 .strn .more{color:var(--accent);font-size:14px;font-weight:600;text-decoration:none;margin-top:4px}
 .strn .more:hover{text-decoration:underline}
+
+/* 상단 이력서 다운로드 버튼 */
+.top-r{display:flex;align-items:center;gap:12px}
+.cv-btn{font-size:14px;font-weight:700;color:var(--fg);background:rgba(91,140,255,.18);border:1px solid var(--accent);border-radius:999px;padding:6px 14px;white-space:nowrap}
+.cv-btn:hover{background:rgba(91,140,255,.32)}
+@media(max-width:600px){.top-r{gap:8px}.cv-btn{font-size:13px;padding:5px 11px}}

@@ -15,6 +15,8 @@ function setLang(lang) {
     // 선택한 언어 문구가 없으면 영어, 그것도 없으면 한국어를 보여줍니다.
     el.textContent = el.getAttribute("data-" + lang) || el.getAttribute("data-en") || el.getAttribute("data-ko");
   });
+  var cv = document.getElementById("cv-btn");
+  if (cv) cv.setAttribute("href", "files/Joon-Gul-Hong_Resume_" + (lang === "ko" ? "KO" : "EN") + ".pdf");
   document.querySelectorAll(".flag").forEach(function (b) {
     b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
   });
