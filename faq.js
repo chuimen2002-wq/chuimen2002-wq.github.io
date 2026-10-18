@@ -80,11 +80,22 @@ var FAQ = [
     k: ["연락", "이메일", "메일", "전화", "링크드인", "linkedin", "contact", "email", "phone", "reach", "mail", "kontakt", "telefon", "erreichen"]
   },
   {
+    q: { ko: "이력서를 받을 수 있나요?", en: "Can I download your resume?", de: "Kann ich Ihren Lebenslauf herunterladen?" },
+    a: {
+      ko: "네, 국문과 영문 이력서를 PDF로 내려받으실 수 있습니다.",
+      en: "Yes. You can download my resume as a PDF in Korean or English.",
+      de: "Ja, Sie können meinen Lebenslauf als PDF auf Koreanisch oder Englisch herunterladen."
+    },
+    go: "contact.html#resume",
+    go_label: { ko: "이력서 다운로드", en: "Go to the resume downloads", de: "Zu den Lebenslauf-Downloads" },
+    k: ["이력서", "다운로드", "내려받", "cv", "resume", "download", "lebenslauf", "herunterladen", "curriculum"]
+  },
+  {
     q: { ko: "지금은 어디에 있고, 왜 한국으로 돌아왔나요?", en: "Where are you now, and why did you return to Korea?", de: "Wo sind Sie jetzt, und warum sind Sie nach Korea zurückgekehrt?" },
     a: {
-      ko: "2026년 4월 Uber Eats Germany를 마무리하고 한국으로 돌아왔습니다. 쉽지 않은 결정이었지만, 태어나고 자란 곳에서 2막의 성장 스토리를 쓰고 싶다는 열정이 더 컸습니다.",
-      en: "I wrapped up at Uber Eats Germany in April 2026 and returned to Korea. It was not an easy decision, but my wish to write the second act of my growth story where I was born and raised was stronger.",
-      de: "Im April 2026 habe ich bei Uber Eats Germany abgeschlossen und bin nach Korea zurückgekehrt. Es war keine leichte Entscheidung, aber der Wunsch, das zweite Kapitel meiner Geschichte dort zu schreiben, wo ich geboren und aufgewachsen bin, war stärker."
+      ko: "2026년 4월 Uber Eats Germany를 마무리하고, 2026년 9월 1일 한국으로 완전히 돌아왔습니다. 쉽지 않은 결정이었지만, 태어나고 자란 곳에서 2막의 성장 스토리를 쓰고 싶다는 열정이 더 컸습니다.",
+      en: "I wrapped up at Uber Eats Germany in April 2026 and returned to Korea for good on September 1, 2026. It was not an easy decision, but my wish to write the second act of my growth story where I was born and raised was stronger.",
+      de: "Im April 2026 habe ich bei Uber Eats Germany abgeschlossen und bin am 1. September 2026 endgültig nach Korea zurückgekehrt. Es war keine leichte Entscheidung, aber der Wunsch, das zweite Kapitel meiner Geschichte dort zu schreiben, wo ich geboren und aufgewachsen bin, war stärker."
     },
     go: "career.html#second-act",
     go_label: { ko: "한국 복귀 이야기", en: "The story of my return", de: "Die Geschichte meiner Rückkehr" },
@@ -148,9 +159,9 @@ var FAQ = [
   {
     q: { ko: "자동차 산업 경험이 있나요?", en: "Do you have automotive industry experience?", de: "Haben Sie Erfahrung in der Automobilindustrie?" },
     a: {
-      ko: "Unitech Deutschland에서 자동차용 실러와 NVH 소재를 다루며 유럽 자동차 제조 시장의 전략 계정을 맡았고, 2021년 폭스바겐 그룹의 Tier-1 공급사 공식 지명을 이끌었습니다.",
-      en: "At Unitech Deutschland, working with automotive sealers and NVH materials, I led enterprise account strategy in the European automotive market and drove the official Tier-1 supplier nomination at the Volkswagen Group in 2021.",
-      de: "Bei Unitech Deutschland habe ich mit Dichtmassen und NVH-Materialien für die Automobilindustrie gearbeitet, strategische Accounts im europäischen Automobilmarkt betreut und 2021 die offizielle Tier-1-Nominierung bei der Volkswagen Gruppe vorangetrieben."
+      ko: "Unitech Deutschland에서 자동차용 실러와 NVH 소재를 다루며 유럽 자동차 제조 시장의 전략 계정 업무를 조율·지원했고, 2021년 폭스바겐 그룹의 Tier-1 공급사 공식 지명에 기여했습니다.",
+      en: "At Unitech Deutschland, working with automotive sealers and NVH materials, I coordinated and supported strategic account work in the European automotive market and contributed to the official Tier-1 supplier nomination at the Volkswagen Group in 2021.",
+      de: "Bei Unitech Deutschland habe ich mit Dichtmassen und NVH-Materialien für die Automobilindustrie gearbeitet, die strategische Account-Arbeit im europäischen Automobilmarkt koordiniert und unterstützt und 2021 zur offiziellen Tier-1-Nominierung bei der Volkswagen Gruppe beigetragen."
     },
     go: "career.html#career-unitech",
     go_label: { ko: "Unitech 보기", en: "See Unitech", de: "Unitech ansehen" },
