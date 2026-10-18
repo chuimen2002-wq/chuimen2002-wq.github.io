@@ -5,23 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joon Gul Hong | Portfolio</title>
   <meta name="description" content="Joon Gul Hong - B2B Account Management Portfolio">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body class="home">
   <header class="top">
     <div class="dropdown" id="menu">
       <button class="brand" id="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu-list">
-        JGH <span class="caret" aria-hidden="true">▾</span>
+        <span data-ko="Menu" data-en="Menu" data-de="Menü">Menu</span> <span class="caret" aria-hidden="true">▾</span>
       </button>
       <ul class="menu-list" id="menu-list" hidden>
-        <li><a href="index.html" aria-current="page" data-ko="Home" data-en="Home">Home</a></li>
-        <li><a href="about.html" data-ko="About Me" data-en="About Me">About Me</a></li>
-        <li><a href="career.html" data-ko="My Career" data-en="My Career">My Career</a></li>
-        <li><a href="achievements.html" data-ko="My Key Achievement" data-en="My Key Achievement">My Key Achievement</a></li>
-        <li><a href="contact.html" data-ko="Contact" data-en="Contact">Contact</a></li>
+        <li><a href="index.html" aria-current="page" data-ko="Home" data-en="Home" data-de="Startseite">Home</a></li>
+        <li><a href="about.html" data-ko="About Me" data-en="About Me" data-de="Über mich">About Me</a></li>
+        <li><a href="career.html" data-ko="My Career" data-en="My Career" data-de="Mein Werdegang">My Career</a></li>
+        <li><a href="achievements.html" data-ko="My Key Achievement" data-en="My Key Achievement" data-de="Meine wichtigsten Erfolge">My Key Achievement</a></li>
+        <li><a href="contact.html" data-ko="Contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
       </ul>
     </div>
-    <button id="lang" type="button" aria-label="Switch language">EN</button>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" class="flag" data-lang="ko" aria-pressed="true" aria-label="한국어" title="한국어"><img src="images/flags/kr.svg" alt="" width="26" height="19"></button>
+      <button type="button" class="flag" data-lang="en" aria-pressed="false" aria-label="English" title="English"><img src="images/flags/gb.svg" alt="" width="26" height="19"></button>
+      <button type="button" class="flag" data-lang="de" aria-pressed="false" aria-label="Deutsch" title="Deutsch"><img src="images/flags/de.svg" alt="" width="26" height="19"></button>
+    </div>
   </header>
 
   <main class="slide">
@@ -29,37 +33,37 @@
     <div class="hero-bg" aria-hidden="true"></div>
 
     <section class="intro">
-      <p class="eyebrow" data-ko="B2B Account Management · Retention · Growth" data-en="B2B Account Management · Retention · Growth">B2B Account Management · Retention · Growth</p>
+      <p class="eyebrow" data-ko="B2B Account Management · Retention · Growth" data-en="B2B Account Management · Retention · Growth" data-de="B2B-Account-Management · Kundenbindung · Wachstum">B2B Account Management · Retention · Growth</p>
       <h1>Joon Gul Hong <span>홍준걸</span></h1>
       <p class="tagline"
          data-ko="독일 12년, 데이터로 판단하고 신뢰로 고객과 함께 성장합니다."
-         data-en="12 years in Germany. I decide with data and grow with customers through trust.">독일 12년, 데이터로 판단하고 신뢰로 고객과 함께 성장합니다.</p>
+         data-en="12 years in Germany. I decide with data and grow with customers through trust." data-de="12 Jahre in Deutschland. Ich entscheide auf Basis von Daten und wachse mit meinen Kunden durch Vertrauen.">독일 12년, 데이터로 판단하고 신뢰로 고객과 함께 성장합니다.</p>
     </section>
 
     <nav class="menu" aria-label="Main menu">
       <a class="tile" href="about.html">
         <span class="num">01</span>
-        <strong data-ko="About Me" data-en="About Me">About Me</strong>
-        <small data-ko="저는 이런 사람입니다" data-en="Who I am">저는 이런 사람입니다</small>
+        <strong data-ko="About Me" data-en="About Me" data-de="Über mich">About Me</strong>
+        <small data-ko="저는 이런 사람입니다" data-en="Who I am" data-de="Wer ich bin">저는 이런 사람입니다</small>
       </a>
       <a class="tile" href="career.html">
         <span class="num">02</span>
-        <strong data-ko="My Career" data-en="My Career">My Career</strong>
-        <small data-ko="12년의 경력 여정" data-en="A 12-year journey">12년의 경력 여정</small>
+        <strong data-ko="My Career" data-en="My Career" data-de="Mein Werdegang">My Career</strong>
+        <small data-ko="12년의 경력 여정" data-en="A 12-year journey" data-de="Eine zwölfjährige Reise">12년의 경력 여정</small>
       </a>
       <a class="tile" href="achievements.html">
         <span class="num">03</span>
-        <strong data-ko="My Key Achievement" data-en="My Key Achievement">My Key Achievement</strong>
-        <small data-ko="숫자로 보는 성과" data-en="Results in numbers">숫자로 보는 성과</small>
+        <strong data-ko="My Key Achievement" data-en="My Key Achievement" data-de="Meine wichtigsten Erfolge">My Key Achievement</strong>
+        <small data-ko="숫자로 보는 성과" data-en="Results in numbers" data-de="Ergebnisse in Zahlen">숫자로 보는 성과</small>
       </a>
       <a class="tile" href="contact.html">
         <span class="num">04</span>
-        <strong data-ko="Contact" data-en="Contact">Contact</strong>
-        <small data-ko="함께 이야기해요" data-en="Let's talk">함께 이야기해요</small>
+        <strong data-ko="Contact" data-en="Contact" data-de="Kontakt">Contact</strong>
+        <small data-ko="함께 이야기해요" data-en="Let's talk" data-de="Sprechen wir miteinander">함께 이야기해요</small>
       </a>
     </nav>
   </main>
 
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>

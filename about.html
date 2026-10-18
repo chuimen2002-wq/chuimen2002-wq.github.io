@@ -5,23 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Me | Joon Gul Hong</title>
   <meta name="description" content="Joon Gul Hong - About Me">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body class="page">
   <header class="top">
     <div class="dropdown" id="menu">
       <button class="brand" id="menu-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menu-list">
-        JGH <span class="caret" aria-hidden="true">▾</span>
+        <span data-ko="Menu" data-en="Menu" data-de="Menü">Menu</span> <span class="caret" aria-hidden="true">▾</span>
       </button>
       <ul class="menu-list" id="menu-list" hidden>
-        <li><a href="index.html" data-ko="Home" data-en="Home">Home</a></li>
-        <li><a href="about.html" aria-current="page" data-ko="About Me" data-en="About Me">About Me</a></li>
-        <li><a href="career.html" data-ko="My Career" data-en="My Career">My Career</a></li>
-        <li><a href="achievements.html" data-ko="My Key Achievement" data-en="My Key Achievement">My Key Achievement</a></li>
-        <li><a href="contact.html" data-ko="Contact" data-en="Contact">Contact</a></li>
+        <li><a href="index.html" data-ko="Home" data-en="Home" data-de="Startseite">Home</a></li>
+        <li><a href="about.html" aria-current="page" data-ko="About Me" data-en="About Me" data-de="Über mich">About Me</a></li>
+        <li><a href="career.html" data-ko="My Career" data-en="My Career" data-de="Mein Werdegang">My Career</a></li>
+        <li><a href="achievements.html" data-ko="My Key Achievement" data-en="My Key Achievement" data-de="Meine wichtigsten Erfolge">My Key Achievement</a></li>
+        <li><a href="contact.html" data-ko="Contact" data-en="Contact" data-de="Kontakt">Contact</a></li>
       </ul>
     </div>
-    <button id="lang" type="button" aria-label="Switch language">EN</button>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" class="flag" data-lang="ko" aria-pressed="true" aria-label="한국어" title="한국어"><img src="images/flags/kr.svg" alt="" width="26" height="19"></button>
+      <button type="button" class="flag" data-lang="en" aria-pressed="false" aria-label="English" title="English"><img src="images/flags/gb.svg" alt="" width="26" height="19"></button>
+      <button type="button" class="flag" data-lang="de" aria-pressed="false" aria-label="Deutsch" title="Deutsch"><img src="images/flags/de.svg" alt="" width="26" height="19"></button>
+    </div>
   </header>
 
   <div class="hero-bg" aria-hidden="true"></div>
@@ -30,29 +34,29 @@
     <!-- 1. 소개 -->
     <section class="sec first">
       <p class="eyebrow">About Me</p>
-      <h1 data-ko="제품이 아니라 솔루션을 파는 사람" data-en="I sell solutions, not products.">제품이 아니라 솔루션을 파는 사람</h1>
+      <h1 data-ko="제품이 아니라 솔루션을 파는 사람" data-en="I sell solutions, not products." data-de="Ich verkaufe Lösungen, keine Produkte.">제품이 아니라 솔루션을 파는 사람</h1>
       <p class="tagline"
          data-ko="데이터로 대화하고, 파트너와 함께 성장하는 어카운트 매니저입니다."
-         data-en="An account manager who talks in data and grows together with partners.">데이터로 대화하고, 파트너와 함께 성장하는 어카운트 매니저입니다.</p>
+         data-en="An account manager who talks in data and grows together with partners." data-de="Ein Account Manager, der in Daten spricht und gemeinsam mit Partnern wächst.">데이터로 대화하고, 파트너와 함께 성장하는 어카운트 매니저입니다.</p>
     </section>
 
     <!-- 2. 일하는 방식 -->
     <section class="sec">
-      <h2 data-ko="일하는 방식" data-en="How I work">일하는 방식</h2>
+      <h2 data-ko="일하는 방식" data-en="How I work" data-de="So arbeite ich">일하는 방식</h2>
       <p class="lead2"
          data-ko="카드를 클릭하면 뒤집혀서 설명이 나옵니다."
-         data-en="Click a card to flip it and read more.">카드를 클릭하면 뒤집혀서 설명이 나옵니다.</p>
+         data-en="Click a card to flip it and read more." data-de="Klicken Sie auf eine Karte, um sie umzudrehen und mehr zu erfahren.">카드를 클릭하면 뒤집혀서 설명이 나옵니다.</p>
       <div class="flip-grid">
         <button class="flip" type="button" aria-pressed="false">
           <span class="flip-inner">
             <span class="face front">
               <span class="num">01</span>
-              <strong class="ft" data-ko="제품이 아니라 솔루션" data-en="Solutions, not products">제품이 아니라 솔루션</strong>
+              <strong class="ft" data-ko="제품이 아니라 솔루션" data-en="Solutions, not products" data-de="Lösungen statt Produkte">제품이 아니라 솔루션</strong>
               <span class="hint" aria-hidden="true">↻</span>
             </span>
             <span class="face back">
               <span class="fb" data-ko="고객의 문제에서 출발해, 필요한 것을 함께 설계합니다."
-                    data-en="I start from the customer's problem and design what they need together.">고객의 문제에서 출발해, 필요한 것을 함께 설계합니다.</span>
+                    data-en="I start from the customer's problem and design what they need together." data-de="Ich gehe vom Problem des Kunden aus und entwickle gemeinsam mit ihm, was er braucht.">고객의 문제에서 출발해, 필요한 것을 함께 설계합니다.</span>
             </span>
           </span>
         </button>
@@ -60,12 +64,12 @@
           <span class="flip-inner">
             <span class="face front">
               <span class="num">02</span>
-              <strong class="ft" data-ko="함께 성장하는 파트너십" data-en="Growing together">함께 성장하는 파트너십</strong>
+              <strong class="ft" data-ko="함께 성장하는 파트너십" data-en="Growing together" data-de="Gemeinsam wachsen">함께 성장하는 파트너십</strong>
               <span class="hint" aria-hidden="true">↻</span>
             </span>
             <span class="face back">
               <span class="fb" data-ko="파트너의 성장이 회사의 수익으로 이어지도록 만듭니다."
-                    data-en="I turn partner growth into company revenue, so both sides grow.">파트너의 성장이 회사의 수익으로 이어지도록 만듭니다.</span>
+                    data-en="I turn partner growth into company revenue, so both sides grow." data-de="Ich übersetze das Wachstum meiner Partner in Umsatz für das Unternehmen, sodass beide Seiten wachsen.">파트너의 성장이 회사의 수익으로 이어지도록 만듭니다.</span>
             </span>
           </span>
         </button>
@@ -73,12 +77,12 @@
           <span class="flip-inner">
             <span class="face front">
               <span class="num">03</span>
-              <strong class="ft" data-ko="데이터가 대화입니다" data-en="Data is the conversation">데이터가 대화입니다</strong>
+              <strong class="ft" data-ko="데이터가 대화입니다" data-en="Data is the conversation" data-de="Daten sind das Gespräch">데이터가 대화입니다</strong>
               <span class="hint" aria-hidden="true">↻</span>
             </span>
             <span class="face back">
               <span class="fb" data-ko="데이터로 대화하고, 데이터로 결정합니다."
-                    data-en="I talk in data and decide with data.">데이터로 대화하고, 데이터로 결정합니다.</span>
+                    data-en="I talk in data and decide with data." data-de="Ich spreche in Daten und entscheide auf Basis von Daten.">데이터로 대화하고, 데이터로 결정합니다.</span>
             </span>
           </span>
         </button>
@@ -86,12 +90,12 @@
           <span class="flip-inner">
             <span class="face front">
               <span class="num">04</span>
-              <strong class="ft" data-ko="팀과 팀 사이를 잇습니다" data-en="Connecting teams">팀과 팀 사이를 잇습니다</strong>
+              <strong class="ft" data-ko="팀과 팀 사이를 잇습니다" data-en="Connecting teams" data-de="Teams verbinden">팀과 팀 사이를 잇습니다</strong>
               <span class="hint" aria-hidden="true">↻</span>
             </span>
             <span class="face back">
               <span class="fb" data-ko="부서 사이를 연결해 일이 막히지 않게 하고, 절차를 단순하게 만듭니다."
-                    data-en="I connect teams so work doesn't stall, and I simplify processes.">부서 사이를 연결해 일이 막히지 않게 하고, 절차를 단순하게 만듭니다.</span>
+                    data-en="I connect teams so work doesn't stall, and I simplify processes." data-de="Ich verbinde Teams, damit die Arbeit nicht ins Stocken gerät, und vereinfache Prozesse.">부서 사이를 연결해 일이 막히지 않게 하고, 절차를 단순하게 만듭니다.</span>
             </span>
           </span>
         </button>
@@ -102,33 +106,33 @@
     <section class="sec">
       <blockquote class="quote">
         <p data-ko="모르는 것은 모른다고 말합니다. 하지만 답을 찾는 방법을 알고, 반드시 찾아냅니다."
-           data-en="If I don't know something, I'll say so. But I know how to find the answer, and I will.">모르는 것은 모른다고 말합니다. 하지만 답을 찾는 방법을 알고, 반드시 찾아냅니다.</p>
+           data-en="If I don't know something, I'll say so. But I know how to find the answer, and I will." data-de="Wenn ich etwas nicht weiß, sage ich es. Aber ich weiß, wie ich die Antwort finde, und ich werde sie finden.">모르는 것은 모른다고 말합니다. 하지만 답을 찾는 방법을 알고, 반드시 찾아냅니다.</p>
         <cite data-ko="영화 〈The Pursuit of Happyness〉의 한 장면에서 영감을 받은 저의 일하는 태도입니다."
-              data-en="My working attitude, inspired by a scene from the film The Pursuit of Happyness.">영화 〈The Pursuit of Happyness〉의 한 장면에서 영감을 받은 저의 일하는 태도입니다.</cite>
+              data-en="My working attitude, inspired by a scene from the film The Pursuit of Happyness." data-de="Meine Arbeitshaltung, inspiriert von einer Szene aus dem Film „The Pursuit of Happyness“.">영화 〈The Pursuit of Happyness〉의 한 장면에서 영감을 받은 저의 일하는 태도입니다.</cite>
       </blockquote>
     </section>
 
     <!-- 4. 여정 -->
     <section class="sec">
-      <h2 data-ko="변화를 지나온 길" data-en="My journey">변화를 지나온 길</h2>
-      <p class="lead2" data-ko="반짝이는 점을 눌러 그 시절의 이야기를 열어보세요." data-en="Click a glowing dot to open the story behind it.">반짝이는 점을 눌러 그 시절의 이야기를 열어보세요.</p>
+      <h2 data-ko="변화를 지나온 길" data-en="My journey" data-de="Mein Weg">변화를 지나온 길</h2>
+      <p class="lead2" data-ko="반짝이는 점을 눌러 그 시절의 이야기를 열어보세요." data-en="Click a glowing dot to open the story behind it." data-de="Klicken Sie auf einen leuchtenden Punkt, um die Geschichte dahinter zu öffnen.">반짝이는 점을 눌러 그 시절의 이야기를 열어보세요.</p>
       <ol class="journey">
         <li class="jitem" data-img="images/childhood.jpg" data-pos="50% 52%">
           <button class="jbtn" type="button" aria-haspopup="dialog">
             <span class="dot" aria-hidden="true"></span>
-            <span class="when" data-ko="어린 시절" data-en="Childhood">어린 시절</span>
-            <span class="jtext" data-ko="독일로 이주해 자랐습니다." data-en="Moved to Germany and grew up there.">독일로 이주해 자랐습니다.</span>
+            <span class="when" data-ko="어린 시절" data-en="Childhood" data-de="Kindheit">어린 시절</span>
+            <span class="jtext" data-ko="독일로 이주해 자랐습니다." data-en="Moved to Germany and grew up there." data-de="Nach Deutschland gezogen und dort aufgewachsen.">독일로 이주해 자랐습니다.</span>
           </button>
           <div class="jdetail" hidden>
-            <h3 class="d-title" data-ko="낯선 땅에서 배운 유연함" data-en="Flexibility, learned in an unfamiliar land">낯선 땅에서 배운 유연함</h3>
-            <p class="d-lead" data-ko="제 첫 번째 글로벌 경험은 일터가 아니라 교실이었습니다." data-en="My first global experience was not a workplace, but a classroom.">제 첫 번째 글로벌 경험은 일터가 아니라 교실이었습니다.</p>
+            <h3 class="d-title" data-ko="낯선 땅에서 배운 유연함" data-en="Flexibility, learned in an unfamiliar land" data-de="Flexibilität, gelernt in einem fremden Land">낯선 땅에서 배운 유연함</h3>
+            <p class="d-lead" data-ko="제 첫 번째 글로벌 경험은 일터가 아니라 교실이었습니다." data-en="My first global experience was not a workplace, but a classroom." data-de="Meine erste globale Erfahrung war kein Arbeitsplatz, sondern ein Klassenzimmer.">제 첫 번째 글로벌 경험은 일터가 아니라 교실이었습니다.</p>
             <p class="d-story" data-ko="어린 나이에 낯선 해외로 이주해 유치원과 초등학교에서 독일 교육 과정을 경험했습니다. 그 시간은 유연함과 공감 능력을 길러주었고, 독일어를 자연스럽게 익혀 훗날 독일에서 커리어를 쌓을 수 있는 밑바탕이 되었습니다."
-               data-en="I moved to an unfamiliar country at a young age and went through German kindergarten and elementary school. Those years built my flexibility and empathy, and gave me the German that later made a career in Germany possible.">어린 나이에 낯선 해외로 이주해 유치원과 초등학교에서 독일 교육 과정을 경험했습니다. 그 시간은 유연함과 공감 능력을 길러주었고, 독일어를 자연스럽게 익혀 훗날 독일에서 커리어를 쌓을 수 있는 밑바탕이 되었습니다.</p>
-            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+               data-en="I moved to an unfamiliar country at a young age and went through German kindergarten and elementary school. Those years built my flexibility and empathy, and gave me the German that later made a career in Germany possible." data-de="Schon als Kind zog ich in ein fremdes Land und durchlief dort Kindergarten und Grundschule nach deutschem Bildungssystem. Diese Jahre haben meine Flexibilität und Empathie geprägt und mir die deutsche Sprache gegeben, die später meine Karriere in Deutschland möglich machte.">어린 나이에 낯선 해외로 이주해 유치원과 초등학교에서 독일 교육 과정을 경험했습니다. 그 시간은 유연함과 공감 능력을 길러주었고, 독일어를 자연스럽게 익혀 훗날 독일에서 커리어를 쌓을 수 있는 밑바탕이 되었습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built" data-de="Was diese Erfahrung geprägt hat">이 경험이 키운 것</span>
             <ul class="d-built">
-              <li data-ko="유연함" data-en="Flexibility">유연함</li>
-              <li data-ko="공감 능력" data-en="Empathy">공감 능력</li>
-              <li data-ko="독일어" data-en="German">독일어</li>
+              <li data-ko="유연함" data-en="Flexibility" data-de="Flexibilität">유연함</li>
+              <li data-ko="공감 능력" data-en="Empathy" data-de="Empathie">공감 능력</li>
+              <li data-ko="독일어" data-en="German" data-de="Deutsch">독일어</li>
             </ul>
           </div>
         </li>
@@ -136,19 +140,19 @@
         <li class="jitem" data-img="images/age10.jpg" data-pos="50% 75%">
           <button class="jbtn" type="button" aria-haspopup="dialog">
             <span class="dot" aria-hidden="true"></span>
-            <span class="when" data-ko="10세" data-en="Age 10">10세</span>
-            <span class="jtext" data-ko="한국으로 돌아와 정규 과정을 마쳤습니다." data-en="Returned to Korea and completed my formal education.">한국으로 돌아와 정규 과정을 마쳤습니다.</span>
+            <span class="when" data-ko="10세" data-en="Age 10" data-de="Mit 10 Jahren">10세</span>
+            <span class="jtext" data-ko="한국으로 돌아와 정규 과정을 마쳤습니다." data-en="Returned to Korea and completed my formal education." data-de="Zurück nach Korea gekehrt und die reguläre Ausbildung abgeschlossen.">한국으로 돌아와 정규 과정을 마쳤습니다.</span>
           </button>
           <div class="jdetail" hidden>
-            <h3 class="d-title" data-ko="돌아온 곳에서 다시 시작" data-en="Starting over, back home">돌아온 곳에서 다시 시작</h3>
-            <p class="d-lead" data-ko="두 번째 큰 변화 앞에서도 멈추지 않고 다시 적응했습니다." data-en="Facing a second big change, I adapted all over again.">두 번째 큰 변화 앞에서도 멈추지 않고 다시 적응했습니다.</p>
+            <h3 class="d-title" data-ko="돌아온 곳에서 다시 시작" data-en="Starting over, back home" data-de="Neuanfang in der Heimat">돌아온 곳에서 다시 시작</h3>
+            <p class="d-lead" data-ko="두 번째 큰 변화 앞에서도 멈추지 않고 다시 적응했습니다." data-en="Facing a second big change, I adapted all over again." data-de="Auch vor dem zweiten großen Wandel bin ich nicht stehen geblieben, sondern habe mich neu angepasst.">두 번째 큰 변화 앞에서도 멈추지 않고 다시 적응했습니다.</p>
             <p class="d-story" data-ko="10세에 한국으로 돌아와 새로운 환경에 다시 적응했고, 대학에서는 신문방송학과 독어독문학을 전공했습니다. 독일어를 놓지 않고 꾸준히 이어간 덕분에 두 언어와 두 문화를 모두 지킬 수 있었습니다."
-               data-en="I returned to Korea at ten and adapted to a new environment all over again. At university I majored in Journalism &amp; Mass Communication and German Language &amp; Literature. By never letting go of my German, I kept both languages and both cultures.">10세에 한국으로 돌아와 새로운 환경에 다시 적응했고, 대학에서는 신문방송학과 독어독문학을 전공했습니다. 독일어를 놓지 않고 꾸준히 이어간 덕분에 두 언어와 두 문화를 모두 지킬 수 있었습니다.</p>
-            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+               data-en="I returned to Korea at ten and adapted to a new environment all over again. At university I majored in Journalism &amp; Mass Communication and German Language &amp; Literature. By never letting go of my German, I kept both languages and both cultures." data-de="Mit zehn kehrte ich nach Korea zurück und passte mich erneut an eine neue Umgebung an. An der Universität studierte ich Journalismus und Massenkommunikation sowie Germanistik. Weil ich mein Deutsch nie losgelassen habe, konnte ich beide Sprachen und beide Kulturen bewahren.">10세에 한국으로 돌아와 새로운 환경에 다시 적응했고, 대학에서는 신문방송학과 독어독문학을 전공했습니다. 독일어를 놓지 않고 꾸준히 이어간 덕분에 두 언어와 두 문화를 모두 지킬 수 있었습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built" data-de="Was diese Erfahrung geprägt hat">이 경험이 키운 것</span>
             <ul class="d-built">
-              <li data-ko="이중 언어" data-en="Bilingual">이중 언어</li>
-              <li data-ko="커뮤니케이션" data-en="Communication">커뮤니케이션</li>
-              <li data-ko="꾸준함" data-en="Consistency">꾸준함</li>
+              <li data-ko="이중 언어" data-en="Bilingual" data-de="Zweisprachigkeit">이중 언어</li>
+              <li data-ko="커뮤니케이션" data-en="Communication" data-de="Kommunikation">커뮤니케이션</li>
+              <li data-ko="꾸준함" data-en="Consistency" data-de="Beständigkeit">꾸준함</li>
             </ul>
           </div>
         </li>
@@ -157,18 +161,18 @@
           <button class="jbtn" type="button" aria-haspopup="dialog">
             <span class="dot" aria-hidden="true"></span>
             <span class="when">2014</span>
-            <span class="jtext" data-ko="해외 경력을 쌓기 위해 혼자 타지로 이주했습니다." data-en="Moved abroad on my own to build an international career.">해외 경력을 쌓기 위해 혼자 타지로 이주했습니다.</span>
+            <span class="jtext" data-ko="해외 경력을 쌓기 위해 혼자 타지로 이주했습니다." data-en="Moved abroad on my own to build an international career." data-de="Allein ins Ausland gezogen, um eine internationale Karriere aufzubauen.">해외 경력을 쌓기 위해 혼자 타지로 이주했습니다.</span>
           </button>
           <div class="jdetail" hidden>
-            <h3 class="d-title" data-ko="혼자서 시작한 해외 커리어" data-en="An international career, started alone">혼자서 시작한 해외 커리어</h3>
-            <p class="d-lead" data-ko="혼자 내디딘 첫걸음이 글로벌 커리어의 시작이었습니다." data-en="That first step, taken alone, was the start of my global career.">혼자 내디딘 첫걸음이 글로벌 커리어의 시작이었습니다.</p>
+            <h3 class="d-title" data-ko="혼자서 시작한 해외 커리어" data-en="An international career, started alone" data-de="Eine internationale Karriere, allein begonnen">혼자서 시작한 해외 커리어</h3>
+            <p class="d-lead" data-ko="혼자 내디딘 첫걸음이 글로벌 커리어의 시작이었습니다." data-en="That first step, taken alone, was the start of my global career." data-de="Dieser erste Schritt, allein gegangen, war der Beginn meiner globalen Karriere.">혼자 내디딘 첫걸음이 글로벌 커리어의 시작이었습니다.</p>
             <p class="d-story" data-ko="해외 경력을 쌓기 위해 혼자 타지로 이주했습니다. 다양한 사람들을 만나고 복잡하게 얽힌 이해관계자들 사이에서 일하며 글로벌 역량을 키웠습니다."
-               data-en="I moved abroad on my own to build an international career. Meeting people from many backgrounds and working among complex stakeholders, I grew my global capabilities.">해외 경력을 쌓기 위해 혼자 타지로 이주했습니다. 다양한 사람들을 만나고 복잡하게 얽힌 이해관계자들 사이에서 일하며 글로벌 역량을 키웠습니다.</p>
-            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+               data-en="I moved abroad on my own to build an international career. Meeting people from many backgrounds and working among complex stakeholders, I grew my global capabilities." data-de="Ich zog allein ins Ausland, um eine internationale Karriere aufzubauen. Im Austausch mit Menschen unterschiedlichster Hintergründe und zwischen komplexen Stakeholdern habe ich meine globalen Fähigkeiten entwickelt.">해외 경력을 쌓기 위해 혼자 타지로 이주했습니다. 다양한 사람들을 만나고 복잡하게 얽힌 이해관계자들 사이에서 일하며 글로벌 역량을 키웠습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built" data-de="Was diese Erfahrung geprägt hat">이 경험이 키운 것</span>
             <ul class="d-built">
-              <li data-ko="글로벌 커뮤니케이션" data-en="Global communication">글로벌 커뮤니케이션</li>
-              <li data-ko="이해관계자 조율" data-en="Stakeholder alignment">이해관계자 조율</li>
-              <li data-ko="독립심" data-en="Independence">독립심</li>
+              <li data-ko="글로벌 커뮤니케이션" data-en="Global communication" data-de="Globale Kommunikation">글로벌 커뮤니케이션</li>
+              <li data-ko="이해관계자 조율" data-en="Stakeholder alignment" data-de="Stakeholder-Abstimmung">이해관계자 조율</li>
+              <li data-ko="독립심" data-en="Independence" data-de="Eigenständigkeit">독립심</li>
             </ul>
           </div>
         </li>
@@ -178,18 +182,18 @@
             <span class="dot" aria-hidden="true"></span>
             <span class="when">2016 – 2026</span>
             <span class="jtext" data-ko="독일에서 B2B 영업과 어카운트 매니지먼트를 했습니다. 자동차 부품 제조에서 글로벌 테크 플랫폼까지."
-                  data-en="Worked in B2B sales and account management in Germany, from automotive parts manufacturing to a global tech platform.">독일에서 B2B 영업과 어카운트 매니지먼트를 했습니다. 자동차 부품 제조에서 글로벌 테크 플랫폼까지.</span>
+                  data-en="Worked in B2B sales and account management in Germany, from automotive parts manufacturing to a global tech platform." data-de="In Deutschland im B2B-Vertrieb und Account Management tätig, von der Automobilzulieferung bis zu einer globalen Tech-Plattform.">독일에서 B2B 영업과 어카운트 매니지먼트를 했습니다. 자동차 부품 제조에서 글로벌 테크 플랫폼까지.</span>
           </button>
           <div class="jdetail" hidden>
-            <h3 class="d-title" data-ko="변화 속에서 성과를 만든 10년" data-en="A decade of building results through change">변화 속에서 성과를 만든 10년</h3>
-            <p class="d-lead" data-ko="업종이 바뀌어도 성과를 만드는 방식은 더 단단해졌습니다." data-en="The industry changed, but the way I deliver results only got stronger.">업종이 바뀌어도 성과를 만드는 방식은 더 단단해졌습니다.</p>
+            <h3 class="d-title" data-ko="변화 속에서 성과를 만든 10년" data-en="A decade of building results through change" data-de="Ein Jahrzehnt voller Ergebnisse im Wandel">변화 속에서 성과를 만든 10년</h3>
+            <p class="d-lead" data-ko="업종이 바뀌어도 성과를 만드는 방식은 더 단단해졌습니다." data-en="The industry changed, but the way I deliver results only got stronger." data-de="Die Branche hat sich verändert, doch meine Art, Ergebnisse zu liefern, wurde nur stärker.">업종이 바뀌어도 성과를 만드는 방식은 더 단단해졌습니다.</p>
             <p class="d-story" data-ko="자동차 부품 제조에서 글로벌 테크 플랫폼까지. 실패와 변화 속에서도 목표를 향한 끈기를 잃지 않았고, 변화를 받아들이는 겸손함으로 스스로 방향을 개척해 나갔습니다."
-               data-en="From automotive parts manufacturing to a global tech platform. Through setbacks and change, I never lost my persistence toward the goal, and with the humility to accept change, I charted my own direction.">자동차 부품 제조에서 글로벌 테크 플랫폼까지. 실패와 변화 속에서도 목표를 향한 끈기를 잃지 않았고, 변화를 받아들이는 겸손함으로 스스로 방향을 개척해 나갔습니다.</p>
-            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+               data-en="From automotive parts manufacturing to a global tech platform. Through setbacks and change, I never lost my persistence toward the goal, and with the humility to accept change, I charted my own direction." data-de="Von der Automobilzulieferung bis zu einer globalen Tech-Plattform. Trotz Rückschlägen und Veränderungen habe ich nie die Ausdauer auf dem Weg zum Ziel verloren und mit der Bescheidenheit, Wandel anzunehmen, meine eigene Richtung gefunden.">자동차 부품 제조에서 글로벌 테크 플랫폼까지. 실패와 변화 속에서도 목표를 향한 끈기를 잃지 않았고, 변화를 받아들이는 겸손함으로 스스로 방향을 개척해 나갔습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built" data-de="Was diese Erfahrung geprägt hat">이 경험이 키운 것</span>
             <ul class="d-built">
-              <li data-ko="끈기" data-en="Grit">끈기</li>
-              <li data-ko="겸손" data-en="Humility">겸손</li>
-              <li data-ko="추진력" data-en="Drive">추진력</li>
+              <li data-ko="끈기" data-en="Grit" data-de="Durchhaltevermögen">끈기</li>
+              <li data-ko="겸손" data-en="Humility" data-de="Bescheidenheit">겸손</li>
+              <li data-ko="추진력" data-en="Drive" data-de="Tatkraft">추진력</li>
             </ul>
           </div>
         </li>
@@ -198,18 +202,18 @@
           <button class="jbtn" type="button" aria-haspopup="dialog">
             <span class="dot" aria-hidden="true"></span>
             <span class="when">2026</span>
-            <span class="jtext" data-ko="한국으로 돌아와 새로운 도전을 준비하고 있습니다." data-en="Back in Korea, preparing for the next challenge.">한국으로 돌아와 새로운 도전을 준비하고 있습니다.</span>
+            <span class="jtext" data-ko="한국으로 돌아와 새로운 도전을 준비하고 있습니다." data-en="Back in Korea, preparing for the next challenge." data-de="Zurück in Korea und bereit für die nächste Herausforderung.">한국으로 돌아와 새로운 도전을 준비하고 있습니다.</span>
           </button>
           <div class="jdetail" hidden>
-            <h3 class="d-title" data-ko="제2의 도약" data-en="A second leap">제2의 도약</h3>
-            <p class="d-lead" data-ko="글로벌에서 쌓은 경험을 안고 돌아왔습니다." data-en="I'm back, carrying everything I built abroad.">글로벌에서 쌓은 경험을 안고 돌아왔습니다.</p>
+            <h3 class="d-title" data-ko="제2의 도약" data-en="A second leap" data-de="Der zweite Sprung">제2의 도약</h3>
+            <p class="d-lead" data-ko="글로벌에서 쌓은 경험을 안고 돌아왔습니다." data-en="I'm back, carrying everything I built abroad." data-de="Ich bin zurück und bringe mit, was ich im Ausland aufgebaut habe.">글로벌에서 쌓은 경험을 안고 돌아왔습니다.</p>
             <p class="d-story" data-ko="2026년 9월 1일, 한국으로 완전히 돌아왔습니다. 가족에 대한 그리움을 안고, 한국 시장에서 제 능력을 펼칠 수 있다는 기대로 두 번째 도약을 시작합니다. 시장은 달라도, 유연하게 적응하고 빠르게 배우는 사람이라는 점은 변하지 않습니다."
-               data-en="On September 1, 2026, I came home to Korea for good. Carrying how much I missed my family, and eager to apply my abilities in the Korean market, I'm starting my second leap. The market is different, but I am still someone who adapts flexibly and learns fast.">2026년 9월 1일, 한국으로 완전히 돌아왔습니다. 가족에 대한 그리움을 안고, 한국 시장에서 제 능력을 펼칠 수 있다는 기대로 두 번째 도약을 시작합니다. 시장은 달라도, 유연하게 적응하고 빠르게 배우는 사람이라는 점은 변하지 않습니다.</p>
-            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built">이 경험이 키운 것</span>
+               data-en="On September 1, 2026, I came home to Korea for good. Carrying how much I missed my family, and eager to apply my abilities in the Korean market, I'm starting my second leap. The market is different, but I am still someone who adapts flexibly and learns fast." data-de="Am 1. September 2026 bin ich endgültig nach Korea zurückgekehrt. Mit der Sehnsucht nach meiner Familie und der Vorfreude, meine Fähigkeiten auf dem koreanischen Markt einzusetzen, beginne ich meinen zweiten Sprung. Der Markt ist ein anderer, aber ich bin weiterhin jemand, der sich flexibel anpasst und schnell lernt.">2026년 9월 1일, 한국으로 완전히 돌아왔습니다. 가족에 대한 그리움을 안고, 한국 시장에서 제 능력을 펼칠 수 있다는 기대로 두 번째 도약을 시작합니다. 시장은 달라도, 유연하게 적응하고 빠르게 배우는 사람이라는 점은 변하지 않습니다.</p>
+            <span class="d-label" data-ko="이 경험이 키운 것" data-en="What it built" data-de="Was diese Erfahrung geprägt hat">이 경험이 키운 것</span>
             <ul class="d-built">
-              <li data-ko="적응력" data-en="Adaptability">적응력</li>
-              <li data-ko="빠른 학습" data-en="Fast learning">빠른 학습</li>
-              <li data-ko="새로운 도전" data-en="New challenge">새로운 도전</li>
+              <li data-ko="적응력" data-en="Adaptability" data-de="Anpassungsfähigkeit">적응력</li>
+              <li data-ko="빠른 학습" data-en="Fast learning" data-de="Schnelles Lernen">빠른 학습</li>
+              <li data-ko="새로운 도전" data-en="New challenge" data-de="Neue Herausforderung">새로운 도전</li>
             </ul>
           </div>
         </li>
@@ -218,19 +222,19 @@
 
     <!-- 5. 강점 -->
     <section class="sec">
-      <h2 data-ko="변화가 만든 강점" data-en="Strengths shaped by change">변화가 만든 강점</h2>
+      <h2 data-ko="변화가 만든 강점" data-en="Strengths shaped by change" data-de="Stärken, die der Wandel geformt hat">변화가 만든 강점</h2>
       <p class="lead2"
          data-ko="여러 번의 환경 변화와 커리어 전환점을 겪으며 아래 세 가지가 가장 크게 자랐습니다."
-         data-en="Through many changes of environment and career turning points, these three strengths grew the most.">여러 번의 환경 변화와 커리어 전환점을 겪으며 아래 세 가지가 가장 크게 자랐습니다.</p>
+         data-en="Through many changes of environment and career turning points, these three strengths grew the most." data-de="Durch viele Wechsel der Umgebung und berufliche Wendepunkte sind diese drei Stärken am meisten gewachsen.">여러 번의 환경 변화와 커리어 전환점을 겪으며 아래 세 가지가 가장 크게 자랐습니다.</p>
       <div class="cards3">
         <article class="card">
-          <h3 data-ko="적응력" data-en="Adaptability">적응력</h3>
+          <h3 data-ko="적응력" data-en="Adaptability" data-de="Anpassungsfähigkeit">적응력</h3>
         </article>
         <article class="card">
-          <h3 data-ko="빠르게 배우기" data-en="Fast learning">빠르게 배우기</h3>
+          <h3 data-ko="빠르게 배우기" data-en="Fast learning" data-de="Schnelles Lernen">빠르게 배우기</h3>
         </article>
         <article class="card">
-          <h3 data-ko="팀 스피릿" data-en="Team spirit">팀 스피릿</h3>
+          <h3 data-ko="팀 스피릿" data-en="Team spirit" data-de="Teamgeist">팀 스피릿</h3>
         </article>
       </div>
     </section>
@@ -238,8 +242,8 @@
     <!-- 6. 다음 페이지 -->
     <section class="sec last">
       <div class="next-row">
-        <a class="btn" href="career.html" data-ko="다음: My Career →" data-en="Next: My Career →">다음: My Career →</a>
-        <a class="btn ghost" href="index.html" data-ko="처음으로" data-en="Back to Home">처음으로</a>
+        <a class="btn" href="career.html" data-ko="다음: My Career →" data-en="Next: My Career →" data-de="Weiter: Mein Werdegang →">다음: My Career →</a>
+        <a class="btn ghost" href="index.html" data-ko="처음으로" data-en="Back to Home" data-de="Zur Startseite">처음으로</a>
       </div>
     </section>
   </main>
@@ -252,6 +256,6 @@
     </div>
   </dialog>
 
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>
