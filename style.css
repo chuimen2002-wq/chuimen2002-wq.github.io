@@ -256,6 +256,16 @@ html:has(dialog[open]){overflow:hidden}
 .ustep .when{display:block;color:var(--accent2);font-weight:700;font-size:14px;letter-spacing:.04em}
 .utext{display:block;max-width:640px}
 
+/* 경력 사이의 이야기(공백기) */
+.interlude{position:relative;padding:24px 24px 24px 28px;border:1px dashed var(--accent);border-radius:16px;background:rgba(91,140,255,.07)}
+.flip-grid > .interlude{grid-column:1/-1}
+.interlude .eyebrow{margin:0 0 6px}
+.interlude h3{margin:0 0 8px;font-size:clamp(20px,2.6vw,26px)}
+.interlude .ilead{margin:0 0 14px;color:var(--fg);max-width:720px}
+.ilist{display:block}
+.il{display:block;position:relative;padding-left:16px;margin-top:6px;color:var(--muted);font-size:15px;line-height:1.6;max-width:720px}
+.il::before{content:"•";position:absolute;left:0;color:var(--accent)}
+
 @media(max-width:600px){
   .flip-grid{grid-template-columns:1fr}
   .flip{height:170px}
