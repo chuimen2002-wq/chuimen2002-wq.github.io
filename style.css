@@ -232,6 +232,30 @@ html:has(dialog[open]){overflow:hidden}
 .btn:hover{filter:brightness(1.12)}
 .btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
 
+/* ===== My Career: 내용 길이에 맞춰 높이가 자동으로 정해지는 카드 ===== */
+.flip.cf{height:auto;display:flex}
+.cf .flip-inner{display:grid;height:auto;flex:1}
+.cf .face{position:relative;inset:auto;grid-area:1/1;justify-content:flex-start;padding:24px 24px 44px}
+.cf .face.front{justify-content:center}
+.cf .role{color:var(--accent2);font-size:15px;font-weight:600}
+.cf .fi{color:var(--muted);font-size:15px;line-height:1.55}
+.cf .fl{display:block;position:relative;padding-left:16px;font-size:15px;line-height:1.6}
+.cf .fl::before{content:"•";position:absolute;left:0;color:var(--accent2)}
+.cf .face.back{justify-content:center;gap:10px}
+.sub{font-size:clamp(20px,2.6vw,26px);margin:56px 0 18px}
+.lead2.tight{margin-top:-6px}
+.flip-grid.g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:16px}
+.stat{padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.05);backdrop-filter:blur(6px)}
+.stat .big{display:block;font-size:clamp(30px,4vw,42px);font-weight:800;color:var(--accent2);letter-spacing:-.02em;line-height:1.1}
+.stat .slbl{display:block;margin-top:8px;color:var(--muted);font-size:15px;line-height:1.5}
+.ujourney{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.ustep{position:relative;padding:0 0 22px 22px}
+.ustep:last-child{padding-bottom:0}
+.ustep::before{content:"";position:absolute;left:-30px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(91,140,255,.2)}
+.ustep .when{display:block;color:var(--accent2);font-weight:700;font-size:14px;letter-spacing:.04em}
+.utext{display:block;max-width:640px}
+
 @media(max-width:600px){
   .flip-grid{grid-template-columns:1fr}
   .flip{height:170px}
